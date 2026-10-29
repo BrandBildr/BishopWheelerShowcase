@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="A website concept for Bishop &amp; Wheeler, heating and plumbing engineers in Ivybridge since 2001. By BrandBildr.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BrandBildr">
+<meta property="og:url" content="https://bishop-wheeler-concept.netlify.app/">
+<meta property="og:title" content="Bishop &amp; Wheeler · Website concept by BrandBildr">
+<meta property="og:description" content="Right first time since 2001. A website to match.">
+<meta property="og:image" content="https://bishop-wheeler-concept.netlify.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bishop &amp; Wheeler website concept homepage">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bishop &amp; Wheeler · Website concept by BrandBildr">
+<meta name="twitter:description" content="Right first time since 2001. A website to match.">
+<meta name="twitter:image" content="https://bishop-wheeler-concept.netlify.app/og.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Bishop &amp; Wheeler Concept</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500&family=Libre+Caslon+Text:ital@0;1&family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600&display=swap">
+<style>/* Layout: van-livery navy blocks on white, joined by a red/navy "flow & return" pipe rule. Their logo, icons, Montserrat and colours kept; type and rhythm elevated. */
+:root{
+  --navy:#23408F;        /* logo tagline + headings (site CSS) */
+  --navy-deep:#0A2A6F;   /* site CSS, used for depth */
+  --red:#ED1B2E;         /* nav + buttons (site CSS) */
+  --red-press:#C52433;   /* active nav (site CSS) */
+  --ink:#231F20;         /* logo wordmark */
+  --char:#58585A;        /* footer/body grey (site CSS) */
+  --mist:#E7E7E8;        /* panels (site CSS) */
+  --frost:#F2F4F9;       /* navy-tinted neutral */
+  --paper:#FFFFFF;
+  --line:#D9DDE8;
+  --f-sans:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --f-serif:"Libre Caslon Text",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --bb:"Space Grotesk",system-ui,sans-serif;--bb-ink:#0A0A0C;--bb-blue:#2A47ED;
+  --body:var(--f-sans);--mono:var(--f-mono);--display:var(--f-sans);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{text-wrap:balance;margin:0;letter-spacing:-.02em;line-height:1.08}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.serif{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* Top bar + header */
+.topbar{background:var(--navy-deep);color:#DCE3F5;font-size:.78rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:8px;flex-wrap:wrap}
+.topbar span{display:inline-flex;gap:8px;align-items:center}
+.topbar .dot{width:7px;height:7px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 3px rgba(61,220,132,.2)}
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.brand img{height:44px;width:auto}
+nav.main{display:flex;gap:4px;align-items:center}
+nav.main a{text-decoration:none;font-weight:600;font-size:.88rem;padding:10px 12px;color:var(--ink)}
+nav.main a:hover,nav.main a[aria-current]{color:var(--navy)}
+nav.main a[aria-current]{box-shadow:inset 0 -3px 0 var(--red)}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.hdr-phone{display:flex;flex-direction:column;line-height:1.15;text-decoration:none;text-align:right}
+.hdr-phone small{font-size:.68rem;color:var(--char);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.hdr-phone strong{font-size:1.05rem;color:var(--navy);font-variant-numeric:tabular-nums}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 .92rem/1 var(--f-sans);padding:15px 22px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-press)}
+.btn-ghost{border-color:currentColor;background:transparent}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-deep)}
+.btn:active{transform:translateY(1px)}
+.menu-btn{display:none;background:none;border:2px solid var(--ink);padding:9px 12px;font:700 .8rem var(--f-sans);cursor:pointer}
+@media (max-width:980px){
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:8px max(20px,env(safe-area-inset-left,0px)) 16px;border-bottom:1px solid var(--line)}
+  nav.main.open{display:flex}
+  .menu-btn{display:inline-block}
+  .hdr-phone{display:none}
+}
+@media (max-width:520px){.brand img{height:34px}.hdr-cta .btn{padding:12px 14px;font-size:.82rem}}
+
+/* Flow & return rule */
+.pipes{display:grid;gap:5px;margin-block:0}
+.pipes span{display:block;height:3px}
+.pipes .flow{background:var(--red)}
+.pipes .ret{background:var(--navy)}
+.pipe-label{display:flex;justify-content:space-between;font:600 .62rem/1 var(--f-mono);letter-spacing:.12em;color:var(--char);margin-top:6px}
+
+/* Hero */
+.hero{background:var(--frost);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-block:64px 56px}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.1rem);font-weight:800;color:var(--ink);margin-top:14px}
+.hero h1 .serif{color:var(--navy);font-weight:400}
+.hero .lede{font-size:1.1rem;color:#3c3b3d;max-width:34em;margin-top:20px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;font-size:.84rem;color:var(--char);font-weight:600}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta svg{flex:none}
+.hero-figure{position:relative;min-width:0}
+.hero-figure .photo{aspect-ratio:4/4.3;width:100%;max-width:100%;object-fit:cover;background:var(--mist)}
+.hero-figure .badge{position:absolute;left:-22px;bottom:26px;background:var(--navy);color:#fff;padding:18px 20px;max-width:240px;box-shadow:0 18px 40px -18px rgba(10,42,111,.6)}
+.hero-figure .badge strong{display:block;font-size:2.4rem;line-height:1;font-weight:800;font-variant-numeric:tabular-nums}
+.hero-figure .badge small{display:block;font-size:.8rem;margin-top:6px;color:#DCE3F5;line-height:1.35}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:40px}.hero-figure .badge{left:12px}}
+
+/* Trust strip */
+.trust{border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust .wrap>div{padding:22px 18px;border-left:1px solid var(--line);display:grid;gap:4px}
+.trust .wrap>div:first-child{border-left:0;padding-left:0}
+.trust strong{font-size:.95rem}
+.trust small{color:var(--char);font-size:.8rem}
+@media (max-width:860px){.trust .wrap{grid-template-columns:1fr 1fr;column-gap:16px}.trust .wrap>div{border-left:0;padding-left:0;border-top:1px solid var(--line)}}
+
+/* Sections */
+section.block{padding-block:88px}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:44px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:800;margin-top:12px}
+.sec-head p{color:#47464a;max-width:36em}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr;gap:16px}section.block{padding-block:60px}}
+
+/* Services with their illustrations */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc{background:#fff;padding:30px 24px 26px;display:flex;flex-direction:column;gap:14px;text-decoration:none;position:relative;transition:background .2s}
+.svc:hover{background:var(--frost)}
+.svc .ill{height:76px;display:flex;align-items:flex-end}
+.svc .ill img{width:auto;height:auto;max-height:76px;transition:transform .3s}
+.svc:hover .ill img{transform:translateY(-4px)}
+.svc h3{font-size:1.2rem;font-weight:700;color:var(--navy)}
+.svc p{font-size:.9rem;color:#4a494c}
+.svc .more{margin-top:auto;font-weight:700;font-size:.82rem;color:var(--red);display:flex;align-items:center;gap:8px}
+.svc .more::after{content:"";width:18px;height:2px;background:currentColor;transition:width .2s}
+.svc:hover .more::after{width:30px}
+@media (max-width:960px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.services{grid-template-columns:1fr}}
+
+/* Boiler check */
+.check{background:var(--navy);color:#fff}
+.check .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:84px}
+.check h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800}
+.check .eyebrow{color:#ff8a94}
+.check p.lead{color:#DCE3F5;margin-top:16px;max-width:30em}
+.tool{background:#fff;color:var(--ink);padding:28px;display:grid;gap:22px}
+.tool label,.tool legend{font-weight:700;font-size:.85rem}
+.tool fieldset{border:0;padding:0;margin:0;display:grid;gap:10px}
+.age-row{display:flex;justify-content:space-between;align-items:baseline}
+.age-row output{font:700 1.6rem var(--f-sans);color:var(--navy);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--red)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{border:2px solid var(--line);padding:9px 14px;font-weight:600;font-size:.85rem;cursor:pointer}
+.seg input:checked+label{border-color:var(--navy);background:var(--navy);color:#fff}
+.seg input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.verdict{background:var(--frost);padding:18px 20px;display:grid;gap:8px;border-left:4px solid var(--red)}
+.verdict strong{font-size:1.05rem;color:var(--navy)}
+.verdict p{font-size:.9rem;color:#3c3b3d}
+.eff{display:grid;gap:6px}
+.eff-row{display:grid;grid-template-columns:96px 1fr 44px;gap:10px;align-items:center;font-size:.78rem;font-weight:600}
+.eff-bar{height:10px;background:var(--mist)}
+.eff-bar i{display:block;height:100%;transition:width .4s}
+.eff-row .mono{text-align:right}
+@media (max-width:860px){.check .wrap{grid-template-columns:1fr;gap:32px;padding-block:60px}.tool{padding:20px}}
+
+/* Story */
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.story-img{position:relative}
+.story-img img{width:100%;aspect-ratio:488/300;object-fit:cover}
+.story-img .stamp{position:absolute;right:-14px;top:-14px;background:var(--red);color:#fff;font-weight:800;padding:12px 14px;line-height:1.05;text-align:center;font-size:.8rem}
+.story-img .stamp b{display:block;font-size:1.7rem}
+.story h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;margin-top:12px}
+.story p{color:#47464a;margin-top:16px;max-width:36em}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:28px;border:1px solid var(--line)}
+.team div{background:#fff;padding:16px}
+.team strong{display:block;font-size:1.9rem;font-weight:800;color:var(--navy);line-height:1}
+.team small{font-size:.8rem;color:var(--char);font-weight:600}
+@media (max-width:860px){.story{grid-template-columns:1fr;gap:36px}.story-img .stamp{right:10px}}
+
+/* Renewables teaser */
+.renew{background:var(--frost)}
+.renew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rcard{background:#fff;display:flex;flex-direction:column;border:1px solid var(--line)}
+.rcard img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.rcard .in{padding:22px;display:grid;gap:10px}
+.rcard h3{font-size:1.1rem;color:var(--navy)}
+.rcard p{font-size:.9rem;color:#4a494c}
+.rcard .fig{font:700 1.5rem var(--f-sans);color:var(--ink)}
+.rcard .fig small{font-size:.75rem;color:var(--char);font-weight:600;display:block}
+@media (max-width:900px){.renew-grid{grid-template-columns:1fr}}
+.grant{margin-top:28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;background:var(--navy-deep);color:#fff;padding:24px 28px}
+.grant strong{font-size:1.25rem}
+.grant p{color:#DCE3F5;font-size:.9rem;max-width:44em}
+
+/* Area map */
+.area{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.area h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;margin-top:12px}
+.area p{color:#47464a;margin-top:14px}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.towns span{border:1px solid var(--line);padding:6px 11px;font-size:.82rem;font-weight:600;background:#fff}
+.map-box{background:var(--frost);border:1px solid var(--line);position:relative;min-width:0}
+.map-box svg{display:block;width:100%;height:auto}
+.map-legend{position:absolute;left:14px;bottom:12px;font:600 .66rem var(--f-mono);letter-spacing:.08em;color:var(--char)}
+@media (max-width:860px){.area{grid-template-columns:1fr}}
+
+/* A–Z */
+.az{columns:4 200px;column-gap:28px;padding:0;margin:0;list-style:none}
+.az li{break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--line);font-size:.92rem;font-weight:500;display:flex;gap:10px}
+.az li::before{content:"";width:7px;height:7px;background:var(--red);margin-top:.55em;flex:none}
+
+/* CTA band */
+.cta-band{background:var(--red);color:#fff}
+.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;padding-block:44px}
+.cta-band h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800}
+.cta-band p{color:#ffe1e4;margin-top:6px}
+.cta-band .btn-white{background:#fff;color:var(--red)}
+.cta-band .btn-white:hover{background:var(--ink);color:#fff}
+
+/* Footer */
+footer.site{background:var(--ink);color:#c9c8cc;font-size:.88rem}
+footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-block:56px 40px}
+footer.site h4{color:#fff;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:#fff}
+footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.foot-logo{background:#fff;padding:12px 14px;display:inline-block}
+.foot-logo img{height:34px;width:auto}
+.foot-base{border-top:1px solid #3a3637}
+.foot-base .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:18px 70px;font-size:.78rem;grid-template-columns:none}
+.regs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.regs span{border:1px solid #4a4546;padding:5px 9px;font:600 .7rem var(--f-mono);letter-spacing:.04em}
+@media (max-width:860px){footer.site .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){footer.site .wrap{grid-template-columns:1fr}}
+
+/* Page hero (inner) */
+.phero{background:var(--navy);color:#fff}
+.phero .wrap{padding-block:64px 52px;display:grid;gap:16px}
+.phero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;max-width:16em}
+.phero h1 .serif{color:#c9d4f2}
+.phero p{color:#DCE3F5;max-width:40em;font-size:1.05rem}
+.phero .eyebrow{color:#ff8a94}
+.crumbs{font-size:.78rem;color:#b8c3e3}
+.crumbs a{color:#fff}
+
+/* Tech rows (renewables) */
+.tech{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:64px;border-bottom:1px solid var(--line)}
+.tech:nth-of-type(even) .tech-img{order:2}
+.tech-img img{width:100%;aspect-ratio:5/4;object-fit:cover;background:var(--mist)}
+.tech h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--ink);margin-top:10px}
+.tech p{color:#47464a;margin-top:14px;max-width:34em}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:22px}
+.specs div{background:#fff;padding:14px}
+.specs strong{display:block;font-size:1.35rem;color:var(--navy);font-weight:800;font-variant-numeric:tabular-nums}
+.specs small{font-size:.75rem;color:var(--char);font-weight:600;line-height:1.3;display:block}
+.fit{margin-top:18px;font-size:.88rem;color:#3c3b3d}
+.fit b{color:var(--navy)}
+@media (max-width:860px){.tech{grid-template-columns:1fr;gap:28px;padding-block:44px}.tech:nth-of-type(even) .tech-img{order:0}.specs{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:420px){.specs{grid-template-columns:1fr 1fr}}
+
+.compare{overflow-x:auto;margin-top:8px;border:1px solid var(--line)}
+.compare table{border-collapse:collapse;width:100%;min-width:640px;font-size:.9rem}
+.compare th,.compare td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.compare thead th{background:var(--frost);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--char)}
+.compare tbody th{color:var(--navy);font-weight:700}
+.compare td{font-variant-numeric:tabular-nums}
+
+/* Booking */
+.book{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:start;padding-block:56px 88px}
+.steps{display:flex;gap:6px;margin-bottom:28px}
+.steps span{flex:1;height:5px;background:var(--mist);transition:background .3s}
+.steps span.on{background:var(--red)}
+.form-card{border:1px solid var(--line);padding:32px;background:#fff}
+.form-card h2{font-size:1.5rem;font-weight:800;margin-bottom:6px}
+.form-card .sub{color:var(--char);font-size:.9rem;margin-bottom:24px}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{display:flex;flex-direction:column;gap:10px;border:2px solid var(--line);padding:16px;cursor:pointer;height:100%;font-weight:700;font-size:.9rem;transition:border-color .2s}
+.opt label img{max-height:46px;width:auto;height:auto;align-self:flex-start}
+.opt label small{font-weight:500;color:var(--char);font-size:.78rem}
+.opt input:checked+label{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy);background:var(--frost)}
+.opt input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:700px){.opts{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:6px;margin-bottom:16px}
+.field label{font-weight:700;font-size:.85rem}
+.field input,.field select,.field textarea{font:500 1rem var(--f-sans);padding:13px 14px;border:2px solid var(--line);background:#fff;color:var(--ink);width:100%;border-radius:0}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--navy);outline:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}.form-card{padding:20px}}
+.slots{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.slots input{position:absolute;opacity:0;pointer-events:none}
+.slots label{display:grid;text-align:center;border:2px solid var(--line);padding:10px 4px;cursor:pointer;font-weight:700;font-size:.85rem;gap:2px}
+.slots label small{font-weight:500;color:var(--char);font-size:.7rem}
+.slots input:checked+label{background:var(--navy);border-color:var(--navy);color:#fff}
+.slots input:checked+label small{color:#DCE3F5}
+.slots input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:520px){.slots{grid-template-columns:repeat(3,1fr)}}
+.form-nav{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.err{color:var(--red-press);font-size:.84rem;font-weight:600;margin-top:10px}
+.aside{display:grid;gap:16px;position:sticky;top:110px}
+.aside .box{border:1px solid var(--line);padding:22px;background:var(--frost)}
+.aside h3{font-size:1rem;margin-bottom:10px}
+.aside ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:.88rem;color:#3c3b3d}
+.callbox{background:var(--navy)!important;color:#fff;border:0!important}
+.callbox strong{font-size:1.5rem;display:block;font-variant-numeric:tabular-nums;user-select:all}
+.callbox small{color:#DCE3F5}
+.done{text-align:left;display:grid;gap:14px}
+.done .tick{width:54px;height:54px;background:var(--navy);display:grid;place-items:center}
+.summary{background:var(--frost);padding:16px 18px;font-size:.9rem;display:grid;gap:6px}
+.summary div{display:flex;justify-content:space-between;gap:12px}
+.summary span{color:var(--char)}
+@media (max-width:900px){.book{grid-template-columns:1fr}.aside{position:static}}
+
+/* load-in */
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+.hero h1,.hero .lede,.hero-actions{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero .lede{animation-delay:.08s}.hero-actions{animation-delay:.16s}
+
+@media (max-width:640px){.topbar span:last-child{display:none}}
+.rcard.navy{background:var(--navy);border-color:var(--navy)}.rcard.navy h3,.rcard.navy .fig{color:#fff}.rcard.navy p,.rcard.navy .fig small{color:#DCE3F5}.rcard.navy img{filter:brightness(0) invert(1)}
+
+/* ===== BrandBildr concept front end (shared across showcases) ===== */
+.bb-tag{position:fixed;z-index:50;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--bb-ink);color:#fff;font:500 12px/1 var(--bb);letter-spacing:.02em;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.bb-tag i{width:8px;height:8px;border-radius:50%;background:var(--bb-blue)}
+.bb-tag:hover{background:#16161c}
+/* ---------- BrandBildr brand pack view ---------- */
+.bp{background:#FFFFFF;color:#0A0A0C;font-family:var(--body)}
+.bp-band{background:var(--bb-ink);color:#fff}
+.bp-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-block:30px}
+.bp-band .wm{font:600 24px/1 var(--bb);letter-spacing:-.02em}
+.bp-band .ref{font:500 12px/1.5 var(--bb);letter-spacing:.04em;text-transform:uppercase;text-align:right;color:#B9B9C1}
+.bp h2{font:600 clamp(26px,3vw,36px)/1.1 var(--bb);letter-spacing:-.02em;margin-bottom:8px}
+.bp .lab{font:500 11px/1 var(--bb);letter-spacing:.06em;text-transform:uppercase;color:#6E6E76;margin-bottom:14px;display:block}
+.bp section{padding-block:56px;border-bottom:1px solid #E2E2E6}
+.bp .intro{max-width:70ch;color:#3a3a42;font-size:17px}
+.bp a.back{display:inline-flex;margin-top:16px;font:500 14px/1 var(--bb);color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.3);padding:10px 14px;border-radius:6px}
+.logo-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.logo-box div{padding:36px 24px;border-radius:8px;display:grid;place-items:center;min-height:150px;text-align:center}
+.logo-box .wm1{background:#DDCD84;font:400 clamp(22px,2.6vw,30px)/1 var(--display);text-transform:uppercase;color:#000}
+.logo-box .wm2{background:#13203F;color:#DDCD84}
+.logo-box .wm2 b{font:400 clamp(22px,2.6vw,30px)/1 var(--display);letter-spacing:.06em;text-transform:uppercase;display:block}
+.logo-box .wm2 span{font:500 10px/1 var(--body);letter-spacing:.32em;text-transform:uppercase;color:#F4F2EA;display:block;margin-top:8px}
+.cap{font-size:13px;color:#6E6E76;margin-top:10px}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw div{border:1px solid #E2E2E6;border-radius:8px;overflow:hidden;font-size:13px}
+.sw i{display:block;height:84px}
+.sw p{padding:10px 12px;line-height:1.45}
+.sw p b{display:block;font:600 13px/1.3 var(--bb)}
+.sw p code{font-family:var(--mono);font-size:12px}
+.sw .new{outline:2px solid var(--bb-blue);outline-offset:-2px}
+.typerow{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.typerow div{border:1px solid #E2E2E6;border-radius:8px;padding:22px}
+.typerow .s{font-size:40px;line-height:1.1;margin-bottom:10px}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.photos img{aspect-ratio:1;object-fit:cover;border-radius:6px;width:100%}
+.quotes{display:grid;gap:12px}
+.quotes blockquote{margin:0;padding:16px 18px;border-left:3px solid #DDCD84;background:#F5F5F6;font-size:15px;color:#25252b}
+.quotes blockquote cite{display:block;font:500 11px/1 var(--bb);letter-spacing:.06em;text-transform:uppercase;color:#6E6E76;font-style:normal;margin-top:8px}
+.wk{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:760px){.wk{grid-template-columns:1fr}}
+.wk div{border:1px solid #E2E2E6;border-radius:8px;padding:22px}
+.wk h3{font:600 17px/1.2 var(--bb);margin-bottom:12px}
+.wk ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:15px;color:#25252b}
+.dir{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.dir{grid-template-columns:1fr}}
+.dir div{border-top:3px solid #0A0A0C;padding-top:16px}
+.dir h3{font:600 18px/1.2 var(--bb);margin-bottom:10px}
+.dir ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:15px;color:#25252b}
+.show{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;counter-reset:s}
+@media (max-width:860px){.show{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.show{grid-template-columns:1fr}}
+.show div{background:#F5F5F6;border-radius:8px;padding:20px}
+.show b{display:block;font:600 16px/1.25 var(--bb);margin-bottom:8px}
+.show p{font-size:14px;color:#3a3a42}
+.view[hidden]{display:none!important}
+
+/* ===== BrandBildr concept front end (BrandBildr Signature mode) ===== */
+.concept-bar{background:#0A0A0C;color:#EFECE4;font:500 12px/1.4 var(--bb);letter-spacing:.02em}
+.concept-bar .wrap{display:flex;gap:6px 18px;flex-wrap:wrap;justify-content:space-between;padding-block:8px}
+.concept-bar b{font-weight:600;color:#fff}.concept-bar .dimmed{color:#8A8A92}
+.cover{position:fixed;inset:0;z-index:200;background:#0A0A0C;color:#EFECE4;overflow-y:auto;font-family:"Inter",var(--body)}
+.cover[hidden]{display:none!important}
+.cover canvas{position:fixed;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+.cover .cv{position:relative;z-index:1;min-height:100%;display:grid;grid-template-rows:auto 1fr auto;max-width:1200px;margin:0 auto;padding-top:calc(24px + env(safe-area-inset-top,0px));padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.cv-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.cv-top img{height:26px;width:auto}
+.cv-label{font:500 11px/1.2 var(--bb);text-transform:uppercase;color:#8A8A92;letter-spacing:.08em}
+.cv-main{display:grid;gap:28px;align-content:center;padding-block:48px;max-width:860px}
+.cv-main h1{font-family:var(--bb);font-weight:600;letter-spacing:-.03em;font-size:clamp(40px,7vw,88px);line-height:.98;color:#EFECE4}
+.cv-main h1 em{font-style:normal;color:#2A47ED}
+.cv-lede{font-size:clamp(17px,1.5vw,19px);line-height:1.6;color:#B9B7B0;max-width:58ch}
+.cv-inside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#1E1E24;border:1px solid #1E1E24;max-width:860px}
+.cv-inside div{background:#0E0E12;padding:18px;display:grid;gap:8px;align-content:start}
+.cv-inside b{font:600 17px/1.25 var(--bb);color:#EFECE4;letter-spacing:-.01em}
+.cv-inside span{font-size:14px;color:#8A8A92;line-height:1.5}
+.cv-actions{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.cv-btn{display:inline-flex;align-items:center;gap:12px;background:#2A47ED;color:#fff;border:0;border-radius:0;font:600 16px/1 var(--bb);padding:18px 24px;cursor:pointer;transition:background .25s}
+.cv-btn:hover{background:#3B57FF}
+.cv-btn svg{transition:transform .25s}
+.cv-btn:hover svg{transform:translateX(4px)}
+.cv-link{font:500 14px/1 var(--bb);color:#EFECE4;text-decoration:none;border-bottom:1px solid #3a3a44;padding-bottom:4px}
+.cv-link:hover{border-color:#2A47ED}
+.cv-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;border-top:1px solid #1E1E24;padding-top:18px;font-size:13px;color:#8A8A92}
+.cv-foot .sel{color:#EFECE4}
+@media (max-width:700px){
+  .cover .cv{padding-top:calc(16px + env(safe-area-inset-top,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .cv-top img{height:22px}.cv-top .cv-label{display:none}
+  .cv-main{gap:18px;padding-block:24px}
+  .cv-main h1{font-size:clamp(32px,9.6vw,44px)}
+  .cv-lede{font-size:16px;line-height:1.5}
+  .cv-inside{grid-template-columns:1fr}
+  .cv-inside div{grid-template-columns:92px minmax(0,1fr);align-items:baseline;gap:8px;padding:11px 14px}
+  .cv-inside span:last-child{display:none}
+  .cv-inside b{font-size:15px}
+  .cv-actions{flex-direction:column;align-items:stretch}
+  .cv-btn{justify-content:center;padding:17px 20px}.cv-link{align-self:center}
+  .cv-foot{font-size:12px;padding-top:12px}
+}
+body.covered{overflow:hidden}
+body.covered .bb-tag{display:none}
+.bb-tag{cursor:pointer;border:0}
+
+
+@media (max-width:700px){.bb-tag{display:none}.cb-long{display:none}.cb-short{display:inline}.concept-bar .wrap{flex-wrap:nowrap;align-items:center;padding-block:0}.concept-bar .wrap>span{padding-block:10px}.cb-open{padding:12px 0;white-space:nowrap}}
+.cb-short{display:none}.cb-open{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:0;text-decoration:underline;text-decoration-color:#3a3a44;text-underline-offset:3px}
+
+.view[hidden]{display:none!important}
+body.bp-on header.site,body.bp-on .topbar{display:none}
+.bp .logo-box div{min-height:130px}
+.typerow .s{border:0!important;padding:0!important;border-radius:0!important}
+.bp .wrap{max-width:1180px}
+body.covered header.site{position:static}
+</style>
+</head>
+<body>
+
+<section class="cover" id="cover" aria-label="Concept introduction by BrandBildr" hidden>
+  <canvas id="dots" aria-hidden="true"></canvas>
+  <div class="cv">
+    <div class="cv-top"><img src="img/bb-lockup.svg" alt="BrandBildr"><span class="cv-label">Website concept · October 2026</span></div>
+    <div class="cv-main">
+      <span class="cv-label">Prepared for Bishop &amp; Wheeler, Ivybridge</span>
+      <h1>Right first time since 2001. <em>A website to match.</em></h1>
+      <p class="cv-lede">A concept for a new bishopandwheeler.co.uk, built from your own logo, illustrations and words. Nothing here is live.</p>
+      <div class="cv-inside">
+        <div><span class="cv-label">Home</span><b>Boiler check &amp; area map</b><span>Age and fuel in, the right next step out. Your map pin at the heart of South Devon.</span></div>
+        <div><span class="cv-label">Heat pumps</span><b>Grants up front</b><span>Every system side by side, with the £7,500 Boiler Upgrade Scheme front and centre.</span></div>
+        <div><span class="cv-label">Booking</span><b>Book a visit online</b><span>Service, repair or quote in four steps, replacing the callback form.</span></div>
+      </div>
+      <div class="cv-actions">
+        <button class="cv-btn" type="button" id="enterBtn">View the concept <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <a class="cv-link" href="#brandpack" id="bpLink">Read the brand pack</a>
+      </div>
+    </div>
+    <div class="cv-foot"><span>George, BrandBildr · <span class="sel">George@BrandBildr.com</span></span><span>instagram.com/brand.bildr</span></div>
+  </div>
+</section>
+<button class="bb-tag" type="button" id="bbTag" aria-label="About this concept"><i></i>Concept by BrandBildr</button>
+<div id="chrome"><div class="concept-bar"><div class="wrap"><span><b>Website concept</b> <span class="dimmed cb-long">· A proposal for Bishop &amp; Wheeler, not the live site. Real logo, illustrations and copy from bishopandwheeler.co.uk.</span><span class="dimmed cb-short">· Not the live site</span></span><button type="button" class="cb-open" id="cbOpen">Concept by BrandBildr</button></div></div>
+
+<div class="topbar"><div class="wrap"><span>Heating &amp; plumbing engineers serving South Devon since 2001</span><span>Gas Safe 96371 · OFTEC C6630 · Worcester Accredited Installer</span></div></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="#home" aria-label="Bishop &amp; Wheeler home"><img src="img/logo.png" alt="Bishop &amp; Wheeler Ltd. Heating, Plumbing, Solar" width="362" height="68"></a>
+  <nav class="main" id="nav">
+    <a href="#services" data-nav="home">Services</a>
+    <a href="#boiler-check">New boilers</a>
+    <a href="#renewables" data-nav="renewables">Heat pumps &amp; solar</a>
+    <a href="#about">About us</a>
+    <a href="#area">Areas</a>
+  </nav>
+  <div class="hdr-cta">
+    <span class="hdr-phone"><small>Call the office</small><strong>0776 776 7949</strong></span>
+    <a class="btn btn-red" href="#book">Book a visit</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Menu</button>
+  </div>
+</div></header></div>
+
+<main class="view" id="v-home">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Ivybridge · Plymouth · South Hams · Torbay</span>
+    <h1>Warm homes across South Devon, <span class="serif">since 2001.</span></h1>
+    <p class="lede">Boilers fitted, serviced and fixed by a family-run team of Gas Safe engineers. Worcester Accredited, so a new boiler can come with up to 10 years' guarantee.</p>
+    <div class="hero-actions">
+      <a class="btn btn-red" href="#book" data-job="quote">Get a boiler quote</a>
+      <a class="btn btn-ghost" href="#book" data-job="service" style="color:var(--navy)">Book a service</a>
+    </div>
+    <div class="hero-meta">
+      <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Free, no-obligation quotes</span>
+      <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Gas, oil &amp; heat pumps</span>
+      <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>90-day labour guarantee on plumbing</span>
+    </div>
+  </div>
+  <div class="hero-figure">
+    <img class="photo" src="img/ph-engineer.webp" alt="Bishop and Wheeler engineer working on a wall-hung boiler" width="391" height="412">
+    <div class="badge"><strong>10 yrs</strong><small>guarantee available on selected Worcester boilers we install</small></div>
+  </div>
+</div>
+<div class="wrap" aria-hidden="true" style="padding-bottom:22px">
+  <div class="pipes"><span class="flow"></span><span class="ret"></span></div>
+  <div class="pipe-label"><span>FLOW</span><span>RETURN</span></div>
+</div>
+</section>
+
+<section class="trust" id="accreditations"><div class="wrap">
+  <div><strong>Gas Safe registered</strong><small class="mono">Reg. 96371</small></div>
+  <div><strong>OFTEC registered</strong><small class="mono">Reg. C6630 · oil heating</small></div>
+  <div><strong>Worcester Accredited</strong><small>Bosch Group installer</small></div>
+  <div><strong>Est. 2001</strong><small>25 years in South Devon</small></div>
+</div></section>
+
+<section class="block" id="services"><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">What we do</span><h2>Everything that keeps the heat on and the water running.</h2></div>
+    <p>From a dripping tap to a whole new heating system. Every job, large or small, gets done right first time by our own qualified engineers.</p>
+  </div>
+  <div class="services">
+    <a class="svc" href="#boiler-check"><div class="ill"><img src="img/icon-boiler.png" alt="" width="48" height="67"></div><h3>Boiler installs</h3><p>Gas and oil Worcester boilers, sized for your home and fitted with an extended guarantee.</p><span class="more">Check your boiler</span></a>
+    <a class="svc" href="#book" data-job="service"><div class="ill"><img src="img/icon-tools.png" alt="" width="66" height="65"></div><h3>Repairs &amp; servicing</h3><p>Annual services, breakdowns, power flushing, cold radiators and landlord gas safety certificates.</p><span class="more">Book a service</span></a>
+    <a class="svc" href="#all-services"><div class="ill"><img src="img/icon-tap.png" alt="" width="70" height="67"></div><h3>Plumbing</h3><p>Leaks, burst pipes, showers, bathrooms, cylinders and unvented hot water. 90-day labour guarantee.</p><span class="more">See every job we do</span></a>
+    <a class="svc" href="#renewables"><div class="ill"><img src="img/icon-solar.png" alt="" width="75" height="75"></div><h3>Renewable energy</h3><p>Air and ground source heat pumps and solar hot water, with grant support where you qualify.</p><span class="more">Explore heat pumps</span></a>
+  </div>
+</div></section>
+
+<section class="check" id="boiler-check"><div class="wrap">
+  <div>
+    <span class="eyebrow">Is it time for a new boiler?</span>
+    <h2>Older boilers can turn as little as 60% of their fuel into heat.</h2>
+    <p class="lead">A modern Worcester condensing boiler runs at over 90%. Tell us roughly how old yours is and what it runs on, and we'll point you to the right next step.</p>
+  </div>
+  <form class="tool" id="bcheck" onsubmit="return false">
+    <fieldset>
+      <div class="age-row"><label for="age">Age of your boiler</label><output id="ageOut" for="age">12 years</output></div>
+      <input type="range" id="age" min="1" max="25" value="12" aria-describedby="ageOut">
+    </fieldset>
+    <fieldset>
+      <legend>It runs on</legend>
+      <div class="seg">
+        <input type="radio" name="fuel" id="f-gas" value="gas" checked><label for="f-gas">Mains gas</label>
+        <input type="radio" name="fuel" id="f-oil" value="oil"><label for="f-oil">Oil</label>
+        <input type="radio" name="fuel" id="f-lpg" value="lpg"><label for="f-lpg">LPG / electric</label>
+      </div>
+    </fieldset>
+    <div class="eff" aria-label="Efficiency comparison">
+      <div class="eff-row"><span>Yours (est.)</span><span class="eff-bar"><i id="barOld" style="width:68%;background:var(--char)"></i></span><span class="mono" id="effOld">68%</span></div>
+      <div class="eff-row"><span>New Worcester</span><span class="eff-bar"><i style="width:92%;background:var(--red)"></i></span><span class="mono">90%+</span></div>
+    </div>
+    <div class="verdict" aria-live="polite"><strong id="vTitle">Worth getting a quote</strong><p id="vText"></p></div>
+    <a class="btn btn-red" id="vCta" href="#book" data-job="quote">Get my free quote</a>
+    <p style="font-size:.75rem;color:var(--char)">A rough guide only. We’ll check your actual boiler and system on a visit.</p>
+  </form>
+</div></section>
+
+<section class="block" id="about"><div class="wrap story">
+  <div class="story-img">
+    <img src="img/ph-engineer2.webp" alt="Engineer fitting a boiler to the wall" width="488" height="260">
+    <div class="stamp"><b>2001</b>Est. Devon</div>
+  </div>
+  <div>
+    <span class="eyebrow">About Bishop &amp; Wheeler</span>
+    <h2>Started by two engineers. <span class="serif" style="color:var(--navy)">Still run by them.</span></h2>
+    <p>Adrian and Chris founded Bishop &amp; Wheeler in 2001 with one rule: no job is too small to get right first time. Twenty-five years on, the reputation has been built the same way, through hard work, reliability and customers who recommend us to their neighbours.</p>
+    <p>Whether you're a homeowner after a personal service or a landlord who needs someone to look after every property, you'll deal with the same local team.</p>
+    <div class="team">
+      <div><strong>2</strong><small>founding partners</small></div>
+      <div><strong>6</strong><small>qualified engineers</small></div>
+      <div><strong>2</strong><small>apprentices in training</small></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="block renew"><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">Lower-carbon heating</span><h2>Ready to move beyond the boiler?</h2></div>
+    <p>Heat pumps and solar hot water cut running costs and CO₂. We'll tell you honestly whether your home suits one, and fit it properly if it does.</p>
+  </div>
+  <div class="renew-grid">
+    <article class="rcard"><img src="img/ph-heatpump.webp" alt="Air to water heat pump unit installed in a garden" width="406" height="368"><div class="in"><h3>Air to water heat pumps</h3><p>A straight swap for an old gas or oil boiler, with hot water built in.</p><div class="fig">300%+<small>efficiency: 3 units of heat per unit of electricity</small></div></div></article>
+    <article class="rcard"><img src="img/ph-solar.webp" alt="Solar panels being installed on a roof" width="380" height="386"><div class="in"><h3>Solar hot water</h3><p>Worcester Greenskies panels paired with a Greenstar boiler.</p><div class="fig">50–70%<small>of a home's yearly hot water</small></div></div></article>
+    <article class="rcard navy"><div class="in" style="height:100%;align-content:start;padding-top:28px"><img src="img/icon-solar.png" alt="" width="75" height="75" style="width:auto;aspect-ratio:auto"><h3>Ground source heat pumps</h3><p>The ground stays around 12°C all year, giving a steady source of heat whatever the weather.</p><div class="fig">4 kW<small>of heat for every 1 kW of electricity</small></div></div></article>
+  </div>
+  <div class="grant">
+    <div><strong>Up to £7,500 off a heat pump</strong><p>The government's Boiler Upgrade Scheme can cover part of the cost of an air or ground source heat pump, and off-gas homes can get up to £9,000 until 31 March 2027. We'll check what you qualify for.</p></div>
+    <a class="btn btn-red" href="#renewables">See how it works</a>
+  </div>
+</div></section>
+
+<section class="block" id="area"><div class="wrap area">
+  <div>
+    <span class="eyebrow">Areas we cover</span>
+    <h2>Based in Ivybridge, out across <span class="serif" style="color:var(--navy)">South Devon.</span></h2>
+    <p>From our base on Exeter Road we cover Plymouth, the South Hams and Torbay, and the EX and TQ postcodes beyond. Not sure if you're in range? Pop your postcode in when you book and we'll confirm.</p>
+    <div class="towns"><span>Plymouth</span><span>Ivybridge</span><span>Modbury</span><span>Kingsbridge</span><span>Totnes</span><span>Paignton</span><span>Dartmouth</span><span>Tavistock</span><span>Newton Abbot</span><span>Exeter</span></div>
+  </div>
+  <div class="map-box"><svg viewBox="0 0 640 470" role="img" aria-label="Map of South Devon showing the Bishop and Wheeler service area around Ivybridge, from Plymouth to Paignton and up to Exeter"><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#D9DDE8" stroke-width=".6"/></pattern><radialGradient id="reach" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#23408F" stop-opacity=".20"/><stop offset="1" stop-color="#23408F" stop-opacity="0"/></radialGradient></defs><rect width="640" height="470" fill="#E6ECF7"/><rect width="640" height="470" fill="url(#grid)"/><polygon points="0,0 640,0 640,117.5 640.0,117.5 571.4,117.5 565.7,133.2 560.0,156.7 542.9,188.0 525.7,227.2 508.6,250.7 494.3,274.2 497.1,297.7 514.3,313.3 497.1,336.8 480.0,344.7 457.1,376.0 445.7,407.3 440.0,434.7 405.7,442.6 377.1,446.5 354.3,438.7 331.4,415.2 314.3,391.7 291.4,383.8 268.6,376.0 240.0,372.1 205.7,368.2 182.9,352.5 165.7,340.8 151.4,329.0 131.4,332.9 114.3,348.6 68.6,352.5 0.0,352.5 0,352.5" fill="#FFFFFF" stroke="#23408F" stroke-width="1.6" stroke-linejoin="round"/><ellipse cx="285.7" cy="164.5" rx="96" ry="66" fill="#E7E7E8" /><text x="285.7" y="168.5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="3" fill="#58585A">DARTMOOR</text><circle cx="285.7" cy="305.5" r="190" fill="url(#reach)"/><circle cx="285.7" cy="305.5" r="70" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><circle cx="285.7" cy="305.5" r="140" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><circle cx="285.7" cy="305.5" r="210" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><text x="251.4" y="423.0" font-family="Libre Caslon Text, Georgia, serif" font-style="italic" font-size="15" fill="#23408F" fill-opacity=".7">English Channel</text><text x="68.6" y="383.8" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#23408F" fill-opacity=".6">CORNWALL</text><circle cx="160.0" cy="317.3" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="151.0" y="321.3" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Plymouth</text><circle cx="302.9" cy="336.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="311.9" y="340.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Modbury</text><circle cx="365.7" cy="387.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="374.7" y="391.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Kingsbridge</text><circle cx="417.1" cy="274.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="426.1" y="278.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Totnes</text><circle cx="488.6" cy="270.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="497.6" y="274.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Paignton</text><circle cx="480.0" cy="335.3" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="471.0" y="339.3" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Dartmouth</text><circle cx="157.1" cy="180.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="166.1" y="184.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Tavistock</text><circle cx="462.9" cy="195.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="471.9" y="199.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Newton Abbot</text><circle cx="508.6" cy="47.0" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="499.6" y="51.0" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Exeter</text><image href="img/contact-map.png" x="268.7" y="265.5" width="34" height="36"/><rect x="137.7" y="243.5" width="122" height="40" fill="#23408F"/><path d="M259.7 263.5 L271.7 283.5" stroke="#23408F" stroke-width="1.5"/><text x="147.7" y="260.5" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="13" fill="#fff">Ivybridge</text><text x="147.7" y="274.5" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1" fill="#DCE3F5">OUR BASE · PL21</text></svg><span class="map-legend">SCHEMATIC · NOT TO SCALE</span></div>
+</div></section>
+
+<section class="block" id="all-services" style="padding-top:0"><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">The full list</span><h2>Every job we take on.</h2></div>
+    <p>If it carries water, gas or heat around your home, we can fit it, fix it or service it.</p>
+  </div>
+  <ul class="az">
+    <li>Boiler installation</li><li>Boiler repairs</li><li>Burst pipes</li><li>Central heating installations</li><li>Energy efficiency advice</li><li>Gas hob &amp; oven fitting</li><li>Gas safety inspections</li><li>General plumbing</li><li>Ground source heat pumps</li><li>Air to air &amp; air to water heat pumps</li><li>Heated towel rails</li><li>Immersion heaters &amp; tanks</li><li>Kitchen sinks &amp; waste disposals</li><li>Landlord safety certificates</li><li>Leaks &amp; overflows</li><li>Power flushing</li><li>Pump repairs</li><li>Replacement radiators</li><li>Saniflo units</li><li>Shower &amp; bathroom fitting</li><li>Solar panels &amp; solar heating</li><li>Thermostatic radiator valves</li><li>Toilet &amp; tap fitting</li><li>Underfloor heating</li><li>Unvented hot water systems</li><li>Washing machines &amp; dishwashers</li>
+  </ul>
+</div></section>
+</main>
+
+
+
+<main class="view" id="v-renewables" hidden>
+<section class="phero"><div class="wrap">
+  <div class="crumbs"><a href="#home">Home</a> / Heat pumps &amp; solar</div>
+  <span class="eyebrow">Renewable energy</span>
+  <h1>Heat your home from the air, the ground <span class="serif">and the sun.</span></h1>
+  <p>Renewable heating cuts running costs and your home's CO₂. As Worcester Accredited Installers we fit heat pumps and solar hot water to the same standard as our boilers, and we'll be straight with you about whether your home suits one.</p>
+</div>
+<div class="wrap" aria-hidden="true" style="padding-bottom:22px"><div class="pipes"><span class="flow"></span><span class="ret" style="background:#8EA3DA"></span></div></div>
+</section>
+
+<div class="wrap">
+  <section class="tech">
+    <div class="tech-img"><img src="img/ph-heatpump.webp" alt="Air to water heat pump with indoor hot water cylinder" width="406" height="368"></div>
+    <div>
+      <span class="eyebrow">Air to water heat pumps</span>
+      <h2>The straight swap for an old boiler.</h2>
+      <p>An air to water heat pump draws heat from the outside air and comes with a built-in hot water cylinder, so it can replace a tired gas or oil boiler outright. It runs only on electricity, which makes it a strong choice off the gas grid, in refurbishments and in new builds.</p>
+      <div class="specs">
+        <div><strong>300%+</strong><small>efficient</small></div>
+        <div><strong>3 kW</strong><small>heat out per 1 kW in</small></div>
+        <div><strong>£7,500</strong><small>grant available*</small></div>
+      </div>
+      <p class="fit"><b>Best for:</b> oil and LPG homes, refurbishments, new builds and homes without mains gas.</p>
+    </div>
+  </section>
+
+  <section class="tech">
+    <div class="tech-img"><img src="img/ph-engineer.webp" alt="Engineer commissioning a heating system" width="391" height="412"></div>
+    <div>
+      <span class="eyebrow">Ground source heat pumps</span>
+      <h2>Steady warmth from 12°C underground.</h2>
+      <p>A metre or two down, the ground holds an almost constant 12°C whatever the weather above. A glycol-based ground source system harnesses that heat to give a constant supply of hot water and heating. It's a well-established, long-term investment.</p>
+      <div class="specs">
+        <div><strong>4 kW</strong><small>heat out per 1 kW in</small></div>
+        <div><strong>12°C</strong><small>ground temperature all year</small></div>
+        <div><strong>£7,500</strong><small>grant available*</small></div>
+      </div>
+      <p class="fit"><b>Best for:</b> homes with garden or field space for ground loops, and owners planning to stay long-term.</p>
+    </div>
+  </section>
+
+  <section class="tech">
+    <div class="tech-img"><img src="img/ph-engineer2.webp" alt="Engineer installing a wall-mounted unit" width="488" height="260"></div>
+    <div>
+      <span class="eyebrow">Air to air heat pumps</span>
+      <h2>Heat or cool an open space in about a day.</h2>
+      <p>Low maintenance and tidy on the wall, an air to air unit can heat or cool up to 120 m². It suits open-plan rooms, loft and basement conversions, extensions, classrooms and places of worship. The units also filter the air without drying it out, which helps allergy sufferers.</p>
+      <div class="specs">
+        <div><strong>120 m²</strong><small>heated or cooled per unit</small></div>
+        <div><strong>~1 day</strong><small>typical install</small></div>
+        <div><strong>£2,500</strong><small>grant available*</small></div>
+      </div>
+      <p class="fit"><b>Best for:</b> extensions and conversions, and easing the load on an existing boiler.</p>
+    </div>
+  </section>
+
+  <section class="tech">
+    <div class="tech-img"><img src="img/ph-solar.webp" alt="Roof-mounted solar panels being installed" width="380" height="386"></div>
+    <div>
+      <span class="eyebrow">Solar hot water</span>
+      <h2>Let the roof heat your water.</h2>
+      <p>A well-sized solar thermal system should provide around 50–70% of a home's hot water, with the boiler topping up the rest. Worcester Greenskies panels pair with the Greenstar range of regular and system boilers, in gas or oil, for a highly efficient setup.</p>
+      <div class="specs">
+        <div><strong>50–70%</strong><small>of yearly hot water</small></div>
+        <div><strong>Gas or oil</strong><small>Greenstar boiler pairing</small></div>
+        <div><strong>Cylinder</strong><small>separate hot water store</small></div>
+      </div>
+      <p class="fit"><b>Best for:</b> south-facing roofs and homes with a regular or system boiler and cylinder.</p>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:64px">
+    <div class="sec-head">
+      <div><span class="eyebrow">Side by side</span><h2>Which one suits your home?</h2></div>
+      <p>A quick comparison to start the conversation. We'll survey your home before recommending anything.</p>
+    </div>
+    <div class="compare"><table>
+      <thead><tr><th scope="col">System</th><th scope="col">Heat source</th><th scope="col">Output per 1 kW electricity</th><th scope="col">Replaces a boiler?</th><th scope="col">Grant*</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Air to water</th><td>Outside air</td><td>3 kW+</td><td>Yes</td><td>£7,500 (£9,000 off-gas)</td></tr>
+        <tr><th scope="row">Ground source</th><td>Ground at ~12°C</td><td>4 kW</td><td>Yes</td><td>£7,500 (£9,000 off-gas)</td></tr>
+        <tr><th scope="row">Air to air</th><td>Outside air</td><td>Up to 5 kW</td><td>No, it supports it</td><td>£2,500</td></tr>
+        <tr><th scope="row">Solar thermal</th><td>Sunlight</td><td>n/a</td><td>No, it tops it up</td><td>None</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:.8rem;color:var(--char);margin-top:14px;max-width:60em">*Boiler Upgrade Scheme, England and Wales. Grants are paid to the installer and taken off your quote. The £9,000 off-gas rate applies until 31 March 2027. Eligibility rules apply; we'll confirm what you qualify for at survey.</p>
+  </section>
+</div>
+</main>
+
+<main class="view" id="v-book" hidden>
+<section class="phero"><div class="wrap">
+  <div class="crumbs"><a href="#home">Home</a> / Book a visit</div>
+  <span class="eyebrow">Book online</span>
+  <h1>Book a visit <span class="serif">in about a minute.</span></h1>
+  <p>Services, repairs and free quotes. Pick a day that suits you and the office will call to confirm a time.</p>
+</div></section>
+
+<div class="wrap book">
+  <div>
+    <div class="steps" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
+    <form class="form-card" id="bk" novalidate>
+
+      <div class="step" data-step="1">
+        <h2>What do you need?</h2>
+        <p class="sub">Step 1 of 4</p>
+        <div class="opts" role="radiogroup" aria-label="Job type">
+          <div class="opt"><input type="radio" name="job" id="j-service" value="Annual boiler service"><label for="j-service"><img src="img/icon-tools.png" alt="" width="66" height="65">Boiler service<small>Annual check &amp; safety test</small></label></div>
+          <div class="opt"><input type="radio" name="job" id="j-repair" value="Boiler repair or breakdown"><label for="j-repair"><img src="img/icon-boiler.png" alt="" width="48" height="67">Repair<small>No heat, no hot water, leaks</small></label></div>
+          <div class="opt"><input type="radio" name="job" id="j-quote" value="New boiler quote"><label for="j-quote"><img src="img/icon-boiler.png" alt="" width="48" height="67">New boiler<small>Free, no-obligation quote</small></label></div>
+          <div class="opt"><input type="radio" name="job" id="j-hp" value="Heat pump or solar quote"><label for="j-hp"><img src="img/icon-solar.png" alt="" width="75" height="75">Heat pump / solar<small>Survey &amp; grant check</small></label></div>
+          <div class="opt"><input type="radio" name="job" id="j-plumb" value="Plumbing job"><label for="j-plumb"><img src="img/icon-tap.png" alt="" width="70" height="67">Plumbing<small>Taps, showers, pipes</small></label></div>
+          <div class="opt"><input type="radio" name="job" id="j-ll" value="Landlord gas safety certificate"><label for="j-ll"><img src="img/icon-tools.png" alt="" width="66" height="65">Landlord cert<small>CP12 gas safety record</small></label></div>
+        </div>
+      </div>
+
+      <div class="step" data-step="2" hidden>
+        <h2>About your home</h2>
+        <p class="sub">Step 2 of 4</p>
+        <div class="row2">
+          <div class="field"><label for="fuel">Heating runs on</label><select id="fuel"><option>Mains gas</option><option>Oil</option><option>LPG</option><option>Electric</option><option>Not sure</option></select></div>
+          <div class="field"><label for="make">Boiler make (if known)</label><input id="make" placeholder="e.g. Worcester Greenstar"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="pc">Postcode</label><input id="pc" autocomplete="postal-code" placeholder="e.g. PL21 0BD"></div>
+          <div class="field"><label for="own">You are the</label><select id="own"><option>Homeowner</option><option>Landlord</option><option>Tenant</option><option>Business</option></select></div>
+        </div>
+        <div class="field"><label for="notes">Anything we should know?</label><textarea id="notes" rows="3" placeholder="e.g. Radiators upstairs are cold, boiler is about 14 years old"></textarea></div>
+        <p class="err" id="pcErr" hidden>Please enter a postcode so we can check you're in our area.</p>
+      </div>
+
+      <div class="step" data-step="3" hidden>
+        <h2>Pick a day</h2>
+        <p class="sub">Step 3 of 4. The office will call to agree a time slot.</p>
+        <div class="slots" id="slots"></div>
+        <fieldset style="border:0;padding:0;margin:20px 0 0">
+          <legend style="font-weight:700;font-size:.85rem;margin-bottom:8px">Time of day</legend>
+          <div class="seg">
+            <input type="radio" name="tod" id="t-am" value="Morning" checked><label for="t-am">Morning</label>
+            <input type="radio" name="tod" id="t-pm" value="Afternoon"><label for="t-pm">Afternoon</label>
+            <input type="radio" name="tod" id="t-any" value="Any time"><label for="t-any">Any time</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="step" data-step="4" hidden>
+        <h2>Your details</h2>
+        <p class="sub">Step 4 of 4. We only use these to arrange your visit.</p>
+        <div class="field"><label for="nm">Full name</label><input id="nm" autocomplete="name" placeholder="e.g. Sam Taylor"></div>
+        <div class="row2">
+          <div class="field"><label for="tel">Phone</label><input id="tel" type="tel" autocomplete="tel" placeholder="e.g. 07700 900123"></div>
+          <div class="field"><label for="em">Email</label><input id="em" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        </div>
+        <p class="err" id="detErr" hidden>Add your name and a phone number so we can confirm your visit.</p>
+      </div>
+
+      <div class="step done" data-step="5" hidden>
+        <div class="tick"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M5 13.5l5 5L21 7" fill="none" stroke="#fff" stroke-width="3"/></svg></div>
+        <h2>Request received</h2>
+        <p>Thanks. The office will call you to confirm an engineer and time slot.</p>
+        <div class="summary" id="sum"></div>
+        <p style="font-size:.8rem;color:var(--char)">Concept preview: nothing has been sent. On the live site this request would go straight to the Bishop &amp; Wheeler office.</p>
+        <a class="btn btn-navy" href="#home" style="justify-self:start">Back to home</a>
+      </div>
+
+      <p class="err" id="jobErr" hidden>Choose what you need to continue.</p>
+      <div class="form-nav" id="fnav">
+        <button type="button" class="btn btn-ghost" id="back" style="color:var(--navy)" hidden>Back</button>
+        <button type="submit" class="btn btn-red" id="next" style="margin-left:auto">Continue</button>
+      </div>
+    </form>
+  </div>
+
+  <aside class="aside">
+    <div class="box callbox"><small>Rather talk to someone?</small><strong>0776 776 7949</strong><small>Free, no-obligation estimates</small></div>
+    <div class="box">
+      <h3>Every visit comes with</h3>
+      <ul><li>Gas Safe registered engineers who show their ID card</li><li>Clear pricing before any work starts</li><li>90-day labour guarantee on plumbing</li><li>Up to 10 years' guarantee on selected new Worcester boilers</li></ul>
+    </div>
+    <div class="box"><h3>No heating or hot water?</h3><p style="font-size:.88rem;color:#3c3b3d">Choose Repair and tell us what's happening, or call the office. If you smell gas, leave the property and call the National Gas Emergency line on <b style="user-select:all">0800 111 999</b>.</p></div>
+  </aside>
+</div>
+</main>
+
+
+
+<main class="view bp" id="v-brandpack" hidden>
+  <div class="bp-band"><div class="wrap">
+    <div><span class="wm">BrandBildr</span><br><a class="back" href="#home">View the concept site →</a></div>
+    <div class="ref">Mini brand pack &amp; concept direction<br>Bishop &amp; Wheeler · BB-BW-01 · Oct 2026</div>
+  </div></div>
+
+  <section><div class="wrap">
+    <span class="lab">Overview</span>
+    <h2>Bishop &amp; Wheeler, as it stands today</h2>
+    <p class="intro">Family-run heating and plumbing engineers in Ivybridge, established 2001 by partners Adrian and Chris. Gas Safe, OFTEC and Worcester Accredited. Taken from the live site at bishopandwheeler.co.uk (built by i-promote.eu, footer still © 2017). Logo, colours and fonts are pulled from the site's own files and CSS, not judged by eye.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">01 · Logo</span>
+    <h2>A classic serif wordmark. Keep it exactly as is.</h2>
+    <p class="intro" style="margin-bottom:22px">"Bishop &amp; Wheeler Ltd" in a traditional serif, with "Heating | Plumbing | Solar" in navy beneath. It reads as established and trustworthy, which is the whole job for a trade firm. Only a 362 × 68 PNG exists, so a vector redraw is a quick win before any van or print work.</p>
+    <div class="logo-box">
+      <div style="background:#FFFFFF;border:1px solid #E2E2E6"><img src="img/logo.png" alt="Bishop &amp; Wheeler Ltd logo" width="362" height="68" style="width:100%;max-width:340px;height:auto"></div>
+      <div style="background:#23408F"><img src="img/logo.png" alt="Bishop &amp; Wheeler logo reversed to white on navy" width="362" height="68" style="width:100%;max-width:340px;height:auto;filter:brightness(0) invert(1)"></div>
+    </div>
+    <p class="cap">Left: as supplied. Right: reversed out on navy, as used in the concept footer and van-style blocks.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">02 · Colour</span>
+    <h2>From the site's code</h2>
+    <p class="intro" style="margin-bottom:22px">Navy and red come straight from styles.css; ink from the logo file. The live site spreads red across the nav, tabs and buttons. The concept keeps navy as the lead and saves red for actions only. Outlined swatch is the one addition.</p>
+    <div class="sw">
+      <div><i style="background:#23408F"></i><p><b>Navy</b><code>#23408F</code><br>Logo line, headings</p></div>
+      <div><i style="background:#0A2A6F"></i><p><b>Deep navy</b><code>#0A2A6F</code><br>From styles.css, depth</p></div>
+      <div><i style="background:#ED1B2E"></i><p><b>Red</b><code>#ED1B2E</code><br>Nav and buttons</p></div>
+      <div><i style="background:#C52433"></i><p><b>Red, active</b><code>#C52433</code><br>Active and pressed</p></div>
+      <div><i style="background:#231F20"></i><p><b>Ink</b><code>#231F20</code><br>Logo wordmark</p></div>
+      <div><i style="background:#58585A"></i><p><b>Charcoal</b><code>#58585A</code><br>Body, service band</p></div>
+      <div class="new"><i style="background:#F2F4F9"></i><p><b>Frost (new)</b><code>#F2F4F9</code><br>Navy-tinted panel</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">03 · Type</span>
+    <h2>Montserrat stays, with a serif accent from the logo</h2>
+    <div class="typerow" style="margin-top:18px">
+      <div><div class="s" style="font-family:Montserrat,Arial,sans-serif;font-weight:800;letter-spacing:-.02em">Montserrat</div><p>Self-hosted on the live site in Regular and SemiBold. <b>Keep</b>, set heavier and tighter so headlines carry weight.</p></div>
+      <div><div class="s" style="font-family:'Libre Caslon Text',Georgia,serif;font-style:italic">Libre Caslon</div><p><b>Add</b> as an italic accent that echoes the logo's serif. A few words per page, never body copy.</p></div>
+      <div><div class="s" style="font-family:'IBM Plex Mono',monospace;font-size:30px">GAS SAFE 96371</div><p><b>Add</b> a mono for registration numbers and specs. Montserrat Alternates and the Times fallback in body copy are <b>dropped</b>.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">04 · Illustrations &amp; photography</span>
+    <h2>Their illustrations are the best visual asset</h2>
+    <p class="intro" style="margin-bottom:22px">Four flat service icons (boiler, tools, tap, solar panel) and a map pin. Simple, ownable and already theirs, so the concept builds the services, booking and area map around them. The photography is stock and Worcester product material, with no real team, vans or jobs. A half-day shoot of Adrian, Chris and the vans would lift everything.</p>
+    <div style="display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;padding:24px;border:1px solid #E2E2E6;border-radius:8px;margin-bottom:12px">
+      <img src="img/icon-boiler.png" alt="Boiler illustration" width="48" height="67"><img src="img/icon-tools.png" alt="Tools illustration" width="66" height="65"><img src="img/icon-tap.png" alt="Tap illustration" width="70" height="67"><img src="img/icon-solar.png" alt="Solar panel illustration" width="75" height="75"><img src="img/contact-map.png" alt="Map pin" width="44" height="47">
+    </div>
+    <div class="photos">
+      <img src="img/ph-engineer.webp" alt=""><img src="img/ph-engineer2.webp" alt=""><img src="img/ph-heatpump.webp" alt=""><img src="img/ph-solar.webp" alt="">
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">05 · Tone of voice</span>
+    <h2>Plain, honest and reassuring, buried in long paragraphs</h2>
+    <p class="intro" style="margin-bottom:22px">They talk about reliability, hard work and pride in the job, and they never oversell. The good lines are there but hidden, and accreditation logos are left to do the persuading.</p>
+    <div class="quotes">
+      <blockquote>"no matter how small a job is it's important to get it right first time."<cite>Plumbing page · make this the spine of the brand</cite></blockquote>
+    </div>
+    <p class="intro" style="margin-top:18px">Elsewhere the heating page reassures that a noisy system doesn't always need replacing, and the homepage leads with years in business and being fully insured. The concept keeps that honesty, shortens the sentences, puts the customer's problem first and brings the founders forward, because people hire people.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">06 · Read</span>
+    <h2>What's working, what's holding it back</h2>
+    <div class="wk" style="margin-top:18px">
+      <div><h3>Working</h3><ul>
+        <li>25 years trading, founder-led, with six engineers and two apprentices. Real trust capital.</li>
+        <li>Strong credentials: Gas Safe 96371, OFTEC C6630, Worcester Accredited, up to 10-year boiler guarantees.</li>
+        <li>A distinctive logo and a clear navy and red palette.</li>
+        <li>Genuinely broad service, from taps to heat pumps, gas and oil.</li>
+        <li>Good raw content on efficiency, renewables and guarantees.</li>
+      </ul></div>
+      <div><h3>Holding it back</h3><ul>
+        <li>© 2017 in the footer and a dated build that feels its age on a phone.</li>
+        <li>No online booking. Every route ends at a generic callback form.</li>
+        <li>Adrian and Chris aren't mentioned anywhere on the site.</li>
+        <li>Sliders, stock photos and manufacturer banners do the visual work.</li>
+        <li>Heat pumps sit behind long copy, with no mention of the £7,500 grant.</li>
+        <li>Three phone numbers and two addresses across their site and Worcester profile.</li>
+        <li>Keyword-stuffed page titles ("Boiler Repairs Modbury, Plumbing Services Plymouth").</li>
+      </ul></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">07 · Concept direction</span>
+    <h2>Keep, elevate, show off</h2>
+    <div class="dir" style="margin-top:22px">
+      <div><h3>Keep</h3><ul><li>The logo, untouched</li><li>Navy, red and charcoal from their CSS</li><li>Montserrat</li><li>Their four service illustrations and the map pin</li><li>Est. 2001, "right first time", their own words</li></ul></div>
+      <div><h3>Elevate</h3><ul><li>Bolder type with a serif accent from the logo</li><li>Red reserved for actions</li><li>A red and navy "flow and return" pipe rule as the signature detail</li><li>An illustrated South Devon area map built around their pin</li><li>Mobile-first, booking always one tap away</li></ul></div>
+      <div><h3>Lead with</h3><ul><li>Boilers first: installs, servicing and repairs pay the bills</li><li>Heat pumps as the growth story, with the grant up front</li><li>The founders and the team as the proof</li></ul></div>
+    </div>
+    <span class="lab" style="margin-top:40px">What the concept shows off</span>
+    <div class="show">
+      <div><b>Online booking</b><p>A four-step service, repair or quote request with a day picker, replacing the callback form.</p></div>
+      <div><b>Boiler check</b><p>Age and fuel in, a clear next step out. Turns browsers into quote requests.</p></div>
+      <div><b>An illustrated area map</b><p>Ivybridge at the centre, Plymouth to Paignton, drawn around their own map pin.</p></div>
+      <div><b>Heat pumps &amp; grants</b><p>A proper renewables page with the Boiler Upgrade Scheme and a side-by-side comparison.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="lab">08 · To confirm</span>
+    <h2>Before this goes further</h2>
+    <div class="wk" style="margin-top:18px">
+      <div><h3>Details</h3><ul>
+        <li>Which phone number and address to lead with. The concept uses the site's 0776 776 7949 and Uplands, Exeter Road, Ivybridge.</li>
+        <li>Team size, taken from their Worcester profile.</li>
+      </ul></div>
+      <div><h3>Claims</h3><ul>
+        <li>MCS certification, which Boiler Upgrade Scheme grants require.</li>
+        <li>Booking collects a preferred day; the office still calls to confirm a slot.</li>
+      </ul></div>
+    </div>
+  </div></section>
+
+  <section style="border-bottom:0"><div class="wrap">
+    <p class="cap">Concept prepared by BrandBildr as a proposal. Not affiliated with or endorsed by Bishop &amp; Wheeler Ltd. Logo, illustrations, photography and copy © Bishop &amp; Wheeler Ltd.</p>
+  </div></section>
+</main>
+<div id="foot">
+<section class="cta-band"><div class="wrap">
+  <div><h2>Annual boiler service due?</h2><p>Keep your manufacturer guarantee valid and your family safe. Book it in a minute.</p></div>
+  <a class="btn btn-white" href="#book" data-job="service">Book my service</a>
+</div></section>
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <span class="foot-logo"><img src="img/logo.png" alt="Bishop &amp; Wheeler Ltd" width="362" height="68"></span>
+      <p style="margin-top:16px;max-width:30em">Family-run heating and plumbing engineers serving Plymouth, the South Hams and Torbay since 2001.</p>
+      <div class="regs"><span>GAS SAFE 96371</span><span>OFTEC C6630</span><span>WORCESTER ACCREDITED</span></div>
+    </div>
+    <div><h4>Services</h4><ul><li><a href="#boiler-check">Boiler installation</a></li><li><a href="#book" data-job="service">Boiler servicing</a></li><li><a href="#book" data-job="repair">Repairs &amp; breakdowns</a></li><li><a href="#services">Plumbing</a></li><li><a href="#renewables">Heat pumps &amp; solar</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About us</a></li><li><a href="#area">Areas we cover</a></li><li><a href="#accreditations">Accreditations</a></li><li><a href="#book">Book a visit</a></li></ul></div>
+    <div><h4>Get in touch</h4><ul><li style="user-select:all;color:#fff;font-weight:700;font-size:1.05rem">0776 776 7949</li><li>Uplands, Exeter Road<br>Ivybridge, PL21 0BD</li><li>Free, no-obligation quotes</li></ul></div>
+  </div>
+  <div class="foot-base"><div class="wrap"><span>© 2026 Bishop &amp; Wheeler Ltd. Company no. 05828901.</span><span>Concept website by BrandBildr. Not the live Bishop &amp; Wheeler site.</span></div></div>
+</footer></div>
+<script>
+(function(){
+  var age=document.getElementById('age'),out=document.getElementById('ageOut');
+  var bar=document.getElementById('barOld'),eff=document.getElementById('effOld');
+  var t=document.getElementById('vTitle'),x=document.getElementById('vText'),cta=document.getElementById('vCta');
+  function run(){
+    var a=+age.value,f=(document.querySelector('input[name=fuel]:checked')||{}).value;
+    out.textContent=a+(a===1?' year':' years');
+    var e=a<=8?90:a<=12?82:a<=15?74:a<=20?66:60;
+    bar.style.width=e+'%';eff.textContent=e+'%';
+    if(f!=='gas'&&a>=10){t.textContent='Look at a heat pump';x.textContent='Off the gas grid with a '+a+'-year-old boiler, an air to water heat pump could replace it outright. Grants of up to £9,000 are available for off-gas homes until 31 March 2027.';cta.textContent='Get a heat pump quote';cta.href='renewables.html';}
+    else if(a>=10){t.textContent='Worth getting a quote';x.textContent='At '+a+' years old, a new Worcester condensing boiler could save you around 30% on heating bills, with up to 10 years’ guarantee.';cta.textContent='Get my free quote';cta.href='book.html#quote';}
+    else{t.textContent='Keep it serviced';x.textContent='At '+a+(a===1?' year':' years')+' old your boiler has plenty left in it. An annual service keeps it efficient, safe and inside its guarantee.';cta.textContent='Book a service';cta.href='book.html#service';}
+  }
+  age.addEventListener('input',run);
+  document.querySelectorAll('input[name=fuel]').forEach(function(r){r.addEventListener('change',run)});
+  run();
+})();
+
+
+(function(){
+  var f=document.getElementById('bk'),step=1,steps=f.querySelectorAll('.step'),bars=document.querySelectorAll('.steps span');
+  var next=document.getElementById('next'),back=document.getElementById('back'),nav=document.getElementById('fnav');
+  var map={service:'j-service',repair:'j-repair',quote:'j-quote',heatpump:'j-hp',plumbing:'j-plumb',landlord:'j-ll'};
+  function pre(){var id=map[(location.hash||'').slice(1)];if(id){document.getElementById(id).checked=true}}
+  document.addEventListener('click',function(e){var a=e.target.closest('[data-job]');if(a&&map[a.dataset.job]){document.getElementById(map[a.dataset.job]).checked=true;step=1;show()}});
+  // working days for the next two weeks
+  var s=document.getElementById('slots'),d=new Date(),n=0,days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],mon=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  d.setDate(d.getDate()+1);
+  while(n<10){if(d.getDay()>0&&d.getDay()<6){var id='d'+n,lab=days[d.getDay()]+' '+d.getDate()+' '+mon[d.getMonth()];
+    s.insertAdjacentHTML('beforeend','<input type="radio" name="day" id="'+id+'" value="'+lab+'"'+(n===1?' checked':'')+'><label for="'+id+'">'+days[d.getDay()]+'<small>'+d.getDate()+' '+mon[d.getMonth()]+'</small></label>');n++}
+    d.setDate(d.getDate()+1)}
+  function val(sel){var e=f.querySelector(sel);return e?e.value:''}
+  function show(){steps.forEach(function(el){el.hidden=+el.dataset.step!==step});
+    bars.forEach(function(b,i){b.classList.toggle('on',i<Math.min(step,4))});
+    back.hidden=step===1||step===5;nav.hidden=step===5;next.textContent=step===4?'Send request':'Continue';
+    document.querySelectorAll('.err').forEach(function(e){e.hidden=true});}
+  f.addEventListener('submit',function(e){e.preventDefault();
+    if(step===1&&!f.querySelector('input[name=job]:checked')){document.getElementById('jobErr').hidden=false;return}
+    if(step===2&&!val('#pc').trim()){document.getElementById('pcErr').hidden=false;return}
+    if(step===4&&(!val('#nm').trim()||!val('#tel').trim())){document.getElementById('detErr').hidden=false;return}
+    if(step===4){var rows=[['Job',val('input[name=job]:checked')],['Postcode',val('#pc').toUpperCase()],['Heating',val('#fuel')],['Preferred day',val('input[name=day]:checked')+', '+val('input[name=tod]:checked').toLowerCase()],['Name',val('#nm')]];
+      document.getElementById('sum').innerHTML=rows.map(function(r){var sp=document.createElement('span');sp.textContent=r[0];var b=document.createElement('b');b.textContent=r[1];return '<div>'+sp.outerHTML+b.outerHTML+'</div>'}).join('')}
+    step++;show();f.scrollIntoView({behavior:'smooth',block:'start'});});
+  back.addEventListener('click',function(){if(step>1){step--;show()}});
+  show();
+})();
+
+(function(){
+  var views={home:1,renewables:1,book:1,brandpack:1};
+  var chrome=document.getElementById('chrome'),foot=document.getElementById('foot'),tag=document.getElementById('bbTag');
+  function viewOf(id){var el=document.getElementById(id);if(!el)return null;var v=el.closest('.view');return v?v.id.slice(2):null}
+  function show(h){
+    var v=views[h]?h:(viewOf(h)||'home'),target=views[h]?null:h;
+    document.querySelectorAll('.view').forEach(function(el){el.hidden=el.id!=='v-'+v});
+    var bp=v==='brandpack';document.body.classList.toggle('bp-on',bp);chrome.hidden=bp;foot.hidden=bp;tag.hidden=bp;
+    document.querySelectorAll('nav.main a').forEach(function(a){a.removeAttribute('aria-current')});
+    var cur=document.querySelector('nav.main a[data-nav="'+v+'"]');if(cur&&v!=='home')cur.setAttribute('aria-current','page');
+    var nav=document.getElementById('nav');if(nav)nav.classList.remove('open');
+    if(target){var t=document.getElementById(target);if(t){setTimeout(function(){t.scrollIntoView({behavior:'smooth',block:'start'})},30);return}}
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1))});
+  show(location.hash.slice(1));
+
+  // ---------- BrandBildr front end ----------
+  var cover=document.getElementById('cover');
+  function showCover(){cover.hidden=false;document.body.classList.add('covered');startDots()}
+  function hideCover(){cover.hidden=true;document.body.classList.remove('covered');stopDots()}
+  document.getElementById('enterBtn').addEventListener('click',function(){hideCover();if(location.hash&&location.hash!=='#home'){location.hash='home'}else{show('home')}window.scrollTo(0,0)});
+  document.getElementById('bpLink').addEventListener('click',function(){hideCover()});
+  tag.addEventListener('click',showCover);
+  document.getElementById('cbOpen').addEventListener('click',showCover);
+  var cv=document.getElementById('dots'),cx=cv.getContext('2d'),dots=[],W,H,mx=-999,my=-999,raf=null,t0=performance.now();
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){var d=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0);var sp=W<600?24:32;dots=[];for(var x=sp/2;x<W;x+=sp)for(var y=sp/2;y<H;y+=sp)dots.push([x,y,Math.random()*6.28])}
+  function draw(t){cx.clearRect(0,0,W,H);var s=(t-t0)/1000;for(var i=0;i<dots.length;i++){var p=dots[i],dx=p[0]-mx,dy=p[1]-my,dist=Math.sqrt(dx*dx+dy*dy),near=Math.max(0,1-dist/170),pulse=reduce?0:(Math.sin(s*0.35+p[2])+1)/2;
+    var a=0.10+pulse*0.08+near*0.75;cx.fillStyle=near>0.02?'rgba(42,71,237,'+a+')':'rgba(239,236,228,'+a+')';cx.beginPath();cx.arc(p[0],p[1],1.1+near*1.6,0,6.283);cx.fill()}
+    if(!reduce)raf=requestAnimationFrame(draw)}
+  function startDots(){size();cancelAnimationFrame(raf);raf=requestAnimationFrame(draw)}
+  function stopDots(){cancelAnimationFrame(raf)}
+  addEventListener('resize',function(){if(!cover.hidden){size();if(reduce)draw(performance.now())}});
+  addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY;if(reduce&&!cover.hidden)draw(performance.now())});
+  if(!location.hash)showCover();
+})();
+</script>
+</body>
+</html>
