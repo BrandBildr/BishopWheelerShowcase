@@ -325,6 +325,55 @@ footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 @media (max-width:640px){.topbar span:last-child{display:none}}
 .rcard.navy{background:var(--navy);border-color:var(--navy)}.rcard.navy h3,.rcard.navy .fig{color:#fff}.rcard.navy p,.rcard.navy .fig small{color:#DCE3F5}.rcard.navy img{filter:brightness(0) invert(1)}
 
+/* ===== Tighten pass ===== */
+section.block{padding-block:72px}
+.sec-head{margin-bottom:32px}
+.hero .wrap{padding-block:56px 48px}
+.hero-meta{margin-top:24px}
+@media (max-width:860px){section.block{padding-block:52px}}
+
+/* Accordion rows */
+.acc{border-top:1px solid var(--line)}
+.acc:last-child{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary>span{display:grid;gap:4px;min-width:0}
+.acc summary b{font-size:1.1rem;font-weight:700;color:var(--ink)}
+.acc summary small{font-size:.9rem;color:var(--char)}
+.acc summary em{font-style:normal;font-weight:800;color:var(--navy);font-size:1.1rem;white-space:nowrap;display:flex;align-items:center;gap:14px;font-variant-numeric:tabular-nums}
+.acc summary em i{font-style:normal;font-weight:600;font-size:.75rem;color:var(--char)}
+.acc summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+.acc[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+.acc summary:hover b{color:var(--navy)}
+.acc-body{padding:0 0 28px}
+.acc-lg summary b{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;letter-spacing:-.02em}
+.acc-lg summary{padding:26px 0}
+.tech-body{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.tech-body p{color:#47464a;max-width:38em}
+.tech-body .specs{margin-top:18px}
+.tech-body .tech-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+@media (max-width:760px){.tech-body{grid-template-columns:1fr;gap:18px}.acc summary em i{display:none}}
+@media (max-width:480px){.acc summary em{display:none}}
+.acc-sm{background:var(--frost);border:1px solid var(--line)!important;padding:0 18px}
+.acc-sm summary{padding:16px 0}
+.acc-sm summary b{font-size:.95rem}
+.acc-sm .acc-body{padding-bottom:18px;font-size:.88rem;color:#3c3b3d}
+.acc-sm ul{margin:0;padding-left:18px;display:grid;gap:6px}
+
+/* Compact renewables teaser */
+.renew-row{display:grid;grid-template-columns:.75fr 1.25fr;gap:48px;align-items:center}
+.renew-row>img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.renew-row h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;margin-top:12px}
+.renew-row p{color:#47464a;margin-top:14px;max-width:34em}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:24px 0 26px}
+.mini-stats div{background:#fff;padding:14px 16px}
+.mini-stats strong{display:block;font-size:1.4rem;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums}
+.mini-stats small{font-size:.75rem;color:var(--char);font-weight:600}
+@media (max-width:760px){.renew-row{grid-template-columns:1fr;gap:24px}.renew-row>img{aspect-ratio:16/10}}
+.acc summary{justify-content:flex-start}
+.acc summary em{margin-left:auto}
+.hero .wrap:first-child{padding-bottom:36px}
+
 /* ===== BrandBildr concept front end (shared across showcases) ===== */
 .bb-tag{position:fixed;z-index:50;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--bb-ink);color:#fff;font:500 12px/1 var(--bb);letter-spacing:.02em;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .bb-tag i{width:8px;height:8px;border-radius:50%;background:var(--bb-blue)}
@@ -464,7 +513,6 @@ body.covered header.site{position:static}
 <button class="bb-tag" type="button" id="bbTag" aria-label="About this concept"><i></i>Concept by BrandBildr</button>
 <div id="chrome"><div class="concept-bar"><div class="wrap"><span><b>Website concept</b> <span class="dimmed cb-long">· A proposal for Bishop &amp; Wheeler, not the live site. Real logo, illustrations and copy from bishopandwheeler.co.uk.</span><span class="dimmed cb-short">· Not the live site</span></span><button type="button" class="cb-open" id="cbOpen">Concept by BrandBildr</button></div></div>
 
-<div class="topbar"><div class="wrap"><span>Heating &amp; plumbing engineers serving South Devon since 2001</span><span>Gas Safe 96371 · OFTEC C6630 · Worcester Accredited Installer</span></div></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="#home" aria-label="Bishop &amp; Wheeler home"><img src="img/logo.png" alt="Bishop &amp; Wheeler Ltd. Heating, Plumbing, Solar" width="362" height="68"></a>
   <nav class="main" id="nav">
@@ -491,11 +539,7 @@ body.covered header.site{position:static}
       <a class="btn btn-red" href="#book" data-job="quote">Get a boiler quote</a>
       <a class="btn btn-ghost" href="#book" data-job="service" style="color:var(--navy)">Book a service</a>
     </div>
-    <div class="hero-meta">
-      <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Free, no-obligation quotes</span>
-      <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Gas, oil &amp; heat pumps</span>
-      <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>90-day labour guarantee on plumbing</span>
-    </div>
+    <div class="hero-meta"><span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Free, no-obligation quotes</span><span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Gas, oil &amp; heat pumps</span></div>
   </div>
   <div class="hero-figure">
     <img class="photo" src="img/ph-engineer.webp" alt="Bishop and Wheeler engineer working on a wall-hung boiler" width="391" height="412">
@@ -565,8 +609,7 @@ body.covered header.site{position:static}
   <div>
     <span class="eyebrow">About Bishop &amp; Wheeler</span>
     <h2>Started by two engineers. <span class="serif" style="color:var(--navy)">Still run by them.</span></h2>
-    <p>Adrian and Chris founded Bishop &amp; Wheeler in 2001 with one rule: no job is too small to get right first time. Twenty-five years on, the reputation has been built the same way, through hard work, reliability and customers who recommend us to their neighbours.</p>
-    <p>Whether you're a homeowner after a personal service or a landlord who needs someone to look after every property, you'll deal with the same local team.</p>
+    <p>Adrian and Chris founded Bishop &amp; Wheeler in 2001 with one rule: no job is too small to get right first time. Twenty-five years on, homeowners and landlords still deal with the same local team.</p>
     <div class="team">
       <div><strong>2</strong><small>founding partners</small></div>
       <div><strong>6</strong><small>qualified engineers</small></div>
@@ -576,18 +619,15 @@ body.covered header.site{position:static}
 </div></section>
 
 <section class="block renew"><div class="wrap">
-  <div class="sec-head">
-    <div><span class="eyebrow">Lower-carbon heating</span><h2>Ready to move beyond the boiler?</h2></div>
-    <p>Heat pumps and solar hot water cut running costs and CO₂. We'll tell you honestly whether your home suits one, and fit it properly if it does.</p>
-  </div>
-  <div class="renew-grid">
-    <article class="rcard"><img src="img/ph-heatpump.webp" alt="Air to water heat pump unit installed in a garden" width="406" height="368"><div class="in"><h3>Air to water heat pumps</h3><p>A straight swap for an old gas or oil boiler, with hot water built in.</p><div class="fig">300%+<small>efficiency: 3 units of heat per unit of electricity</small></div></div></article>
-    <article class="rcard"><img src="img/ph-solar.webp" alt="Solar panels being installed on a roof" width="380" height="386"><div class="in"><h3>Solar hot water</h3><p>Worcester Greenskies panels paired with a Greenstar boiler.</p><div class="fig">50–70%<small>of a home's yearly hot water</small></div></div></article>
-    <article class="rcard navy"><div class="in" style="height:100%;align-content:start;padding-top:28px"><img src="img/icon-solar.png" alt="" width="75" height="75" style="width:auto;aspect-ratio:auto"><h3>Ground source heat pumps</h3><p>The ground stays around 12°C all year, giving a steady source of heat whatever the weather.</p><div class="fig">4 kW<small>of heat for every 1 kW of electricity</small></div></div></article>
-  </div>
-  <div class="grant">
-    <div><strong>Up to £7,500 off a heat pump</strong><p>The government's Boiler Upgrade Scheme can cover part of the cost of an air or ground source heat pump, and off-gas homes can get up to £9,000 until 31 March 2027. We'll check what you qualify for.</p></div>
-    <a class="btn btn-red" href="#renewables">See how it works</a>
+  <div class="renew-row">
+    <img src="img/ph-heatpump.webp" alt="Air to water heat pump installed beside a home" width="406" height="368">
+    <div>
+      <span class="eyebrow">Heat pumps &amp; solar</span>
+      <h2>Ready to move beyond the boiler?</h2>
+      <p>Air and ground source heat pumps and solar hot water, fitted to the same standard as our boilers. Grants of up to £7,500 may cover part of the cost.</p>
+      <div class="mini-stats"><div><strong>300%+</strong><small>heat pump efficiency</small></div><div><strong>£7,500</strong><small>Boiler Upgrade Scheme</small></div><div><strong>50–70%</strong><small>hot water from solar</small></div></div>
+      <a class="btn btn-navy" href="#renewables">Explore heat pumps &amp; solar</a>
+    </div>
   </div>
 </div></section>
 
@@ -596,19 +636,17 @@ body.covered header.site{position:static}
     <span class="eyebrow">Areas we cover</span>
     <h2>Based in Ivybridge, out across <span class="serif" style="color:var(--navy)">South Devon.</span></h2>
     <p>From our base on Exeter Road we cover Plymouth, the South Hams and Torbay, and the EX and TQ postcodes beyond. Not sure if you're in range? Pop your postcode in when you book and we'll confirm.</p>
-    <div class="towns"><span>Plymouth</span><span>Ivybridge</span><span>Modbury</span><span>Kingsbridge</span><span>Totnes</span><span>Paignton</span><span>Dartmouth</span><span>Tavistock</span><span>Newton Abbot</span><span>Exeter</span></div>
   </div>
   <div class="map-box"><svg viewBox="0 0 640 470" role="img" aria-label="Map of South Devon showing the Bishop and Wheeler service area around Ivybridge, from Plymouth to Paignton and up to Exeter"><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#D9DDE8" stroke-width=".6"/></pattern><radialGradient id="reach" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#23408F" stop-opacity=".20"/><stop offset="1" stop-color="#23408F" stop-opacity="0"/></radialGradient></defs><rect width="640" height="470" fill="#E6ECF7"/><rect width="640" height="470" fill="url(#grid)"/><polygon points="0,0 640,0 640,117.5 640.0,117.5 571.4,117.5 565.7,133.2 560.0,156.7 542.9,188.0 525.7,227.2 508.6,250.7 494.3,274.2 497.1,297.7 514.3,313.3 497.1,336.8 480.0,344.7 457.1,376.0 445.7,407.3 440.0,434.7 405.7,442.6 377.1,446.5 354.3,438.7 331.4,415.2 314.3,391.7 291.4,383.8 268.6,376.0 240.0,372.1 205.7,368.2 182.9,352.5 165.7,340.8 151.4,329.0 131.4,332.9 114.3,348.6 68.6,352.5 0.0,352.5 0,352.5" fill="#FFFFFF" stroke="#23408F" stroke-width="1.6" stroke-linejoin="round"/><ellipse cx="285.7" cy="164.5" rx="96" ry="66" fill="#E7E7E8" /><text x="285.7" y="168.5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="3" fill="#58585A">DARTMOOR</text><circle cx="285.7" cy="305.5" r="190" fill="url(#reach)"/><circle cx="285.7" cy="305.5" r="70" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><circle cx="285.7" cy="305.5" r="140" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><circle cx="285.7" cy="305.5" r="210" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><text x="251.4" y="423.0" font-family="Libre Caslon Text, Georgia, serif" font-style="italic" font-size="15" fill="#23408F" fill-opacity=".7">English Channel</text><text x="68.6" y="383.8" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#23408F" fill-opacity=".6">CORNWALL</text><circle cx="160.0" cy="317.3" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="151.0" y="321.3" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Plymouth</text><circle cx="302.9" cy="336.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="311.9" y="340.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Modbury</text><circle cx="365.7" cy="387.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="374.7" y="391.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Kingsbridge</text><circle cx="417.1" cy="274.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="426.1" y="278.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Totnes</text><circle cx="488.6" cy="270.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="497.6" y="274.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Paignton</text><circle cx="480.0" cy="335.3" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="471.0" y="339.3" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Dartmouth</text><circle cx="157.1" cy="180.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="166.1" y="184.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Tavistock</text><circle cx="462.9" cy="195.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="471.9" y="199.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Newton Abbot</text><circle cx="508.6" cy="47.0" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="499.6" y="51.0" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Exeter</text><image href="img/contact-map.png" x="268.7" y="265.5" width="34" height="36"/><rect x="137.7" y="243.5" width="122" height="40" fill="#23408F"/><path d="M259.7 263.5 L271.7 283.5" stroke="#23408F" stroke-width="1.5"/><text x="147.7" y="260.5" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="13" fill="#fff">Ivybridge</text><text x="147.7" y="274.5" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1" fill="#DCE3F5">OUR BASE · PL21</text></svg><span class="map-legend">SCHEMATIC · NOT TO SCALE</span></div>
 </div></section>
 
 <section class="block" id="all-services" style="padding-top:0"><div class="wrap">
-  <div class="sec-head">
-    <div><span class="eyebrow">The full list</span><h2>Every job we take on.</h2></div>
-    <p>If it carries water, gas or heat around your home, we can fit it, fix it or service it.</p>
-  </div>
-  <ul class="az">
+  <details class="acc acc-lg">
+    <summary><span><span class="eyebrow">The full list</span><b>Every job we take on</b></span><em>26 services</em></summary>
+    <div class="acc-body"><ul class="az">
     <li>Boiler installation</li><li>Boiler repairs</li><li>Burst pipes</li><li>Central heating installations</li><li>Energy efficiency advice</li><li>Gas hob &amp; oven fitting</li><li>Gas safety inspections</li><li>General plumbing</li><li>Ground source heat pumps</li><li>Air to air &amp; air to water heat pumps</li><li>Heated towel rails</li><li>Immersion heaters &amp; tanks</li><li>Kitchen sinks &amp; waste disposals</li><li>Landlord safety certificates</li><li>Leaks &amp; overflows</li><li>Power flushing</li><li>Pump repairs</li><li>Replacement radiators</li><li>Saniflo units</li><li>Shower &amp; bathroom fitting</li><li>Solar panels &amp; solar heating</li><li>Thermostatic radiator valves</li><li>Toilet &amp; tap fitting</li><li>Underfloor heating</li><li>Unvented hot water systems</li><li>Washing machines &amp; dishwashers</li>
-  </ul>
+  </ul></div>
+  </details>
 </div></section>
 </main>
 
@@ -625,66 +663,35 @@ body.covered header.site{position:static}
 </section>
 
 <div class="wrap">
-  <section class="tech">
-    <div class="tech-img"><img src="img/ph-heatpump.webp" alt="Air to water heat pump with indoor hot water cylinder" width="406" height="368"></div>
-    <div>
-      <span class="eyebrow">Air to water heat pumps</span>
-      <h2>The straight swap for an old boiler.</h2>
-      <p>An air to water heat pump draws heat from the outside air and comes with a built-in hot water cylinder, so it can replace a tired gas or oil boiler outright. It runs only on electricity, which makes it a strong choice off the gas grid, in refurbishments and in new builds.</p>
-      <div class="specs">
+  <section class="block" style="padding-block:56px 0"><div class="sec-head"><div><span class="eyebrow">The options</span><h2>Four ways to heat more efficiently.</h2></div><p>Tap a system to see how it works and who it suits.</p></div><div class="acc-group"><details class="acc" open>
+      <summary><span><b>Air to water heat pumps</b><small>The straight swap for an old boiler.</small></span><em>300%+ <i>efficient</i></em></summary>
+      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-heatpump.webp" alt="Air to water heat pump with indoor hot water cylinder" width="406" height="368"></div><div><p>An air to water heat pump draws heat from the outside air and comes with a built-in hot water cylinder, so it can replace a tired gas or oil boiler outright. It runs only on electricity, which makes it a strong choice off the gas grid, in refurbishments and in new builds.</p><div class="specs">
         <div><strong>300%+</strong><small>efficient</small></div>
         <div><strong>3 kW</strong><small>heat out per 1 kW in</small></div>
         <div><strong>£7,500</strong><small>grant available*</small></div>
-      </div>
-      <p class="fit"><b>Best for:</b> oil and LPG homes, refurbishments, new builds and homes without mains gas.</p>
-    </div>
-  </section>
-
-  <section class="tech">
-    <div class="tech-img"><img src="img/ph-engineer.webp" alt="Engineer commissioning a heating system" width="391" height="412"></div>
-    <div>
-      <span class="eyebrow">Ground source heat pumps</span>
-      <h2>Steady warmth from 12°C underground.</h2>
-      <p>A metre or two down, the ground holds an almost constant 12°C whatever the weather above. A glycol-based ground source system harnesses that heat to give a constant supply of hot water and heating. It's a well-established, long-term investment.</p>
-      <div class="specs">
+      </div><p class="fit"><b>Best for:</b> oil and LPG homes, refurbishments, new builds and homes without mains gas.</p></div></div>
+    </details><details class="acc">
+      <summary><span><b>Ground source heat pumps</b><small>Steady warmth from 12°C underground.</small></span><em>4 kW <i>heat out per 1 kW in</i></em></summary>
+      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-engineer.webp" alt="Engineer commissioning a heating system" width="391" height="412"></div><div><p>A metre or two down, the ground holds an almost constant 12°C whatever the weather above. A glycol-based ground source system harnesses that heat to give a constant supply of hot water and heating. It's a well-established, long-term investment.</p><div class="specs">
         <div><strong>4 kW</strong><small>heat out per 1 kW in</small></div>
         <div><strong>12°C</strong><small>ground temperature all year</small></div>
         <div><strong>£7,500</strong><small>grant available*</small></div>
-      </div>
-      <p class="fit"><b>Best for:</b> homes with garden or field space for ground loops, and owners planning to stay long-term.</p>
-    </div>
-  </section>
-
-  <section class="tech">
-    <div class="tech-img"><img src="img/ph-engineer2.webp" alt="Engineer installing a wall-mounted unit" width="488" height="260"></div>
-    <div>
-      <span class="eyebrow">Air to air heat pumps</span>
-      <h2>Heat or cool an open space in about a day.</h2>
-      <p>Low maintenance and tidy on the wall, an air to air unit can heat or cool up to 120 m². It suits open-plan rooms, loft and basement conversions, extensions, classrooms and places of worship. The units also filter the air without drying it out, which helps allergy sufferers.</p>
-      <div class="specs">
+      </div><p class="fit"><b>Best for:</b> homes with garden or field space for ground loops, and owners planning to stay long-term.</p></div></div>
+    </details><details class="acc">
+      <summary><span><b>Air to air heat pumps</b><small>Heat or cool an open space in about a day.</small></span><em>120 m² <i>heated or cooled per unit</i></em></summary>
+      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-engineer2.webp" alt="Engineer installing a wall-mounted unit" width="488" height="260"></div><div><p>Low maintenance and tidy on the wall, an air to air unit can heat or cool up to 120 m². It suits open-plan rooms, loft and basement conversions, extensions, classrooms and places of worship. The units also filter the air without drying it out, which helps allergy sufferers.</p><div class="specs">
         <div><strong>120 m²</strong><small>heated or cooled per unit</small></div>
         <div><strong>~1 day</strong><small>typical install</small></div>
         <div><strong>£2,500</strong><small>grant available*</small></div>
-      </div>
-      <p class="fit"><b>Best for:</b> extensions and conversions, and easing the load on an existing boiler.</p>
-    </div>
-  </section>
-
-  <section class="tech">
-    <div class="tech-img"><img src="img/ph-solar.webp" alt="Roof-mounted solar panels being installed" width="380" height="386"></div>
-    <div>
-      <span class="eyebrow">Solar hot water</span>
-      <h2>Let the roof heat your water.</h2>
-      <p>A well-sized solar thermal system should provide around 50–70% of a home's hot water, with the boiler topping up the rest. Worcester Greenskies panels pair with the Greenstar range of regular and system boilers, in gas or oil, for a highly efficient setup.</p>
-      <div class="specs">
+      </div><p class="fit"><b>Best for:</b> extensions and conversions, and easing the load on an existing boiler.</p></div></div>
+    </details><details class="acc">
+      <summary><span><b>Solar hot water</b><small>Let the roof heat your water.</small></span><em>50–70% <i>of yearly hot water</i></em></summary>
+      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-solar.webp" alt="Roof-mounted solar panels being installed" width="380" height="386"></div><div><p>A well-sized solar thermal system should provide around 50–70% of a home's hot water, with the boiler topping up the rest. Worcester Greenskies panels pair with the Greenstar range of regular and system boilers, in gas or oil, for a highly efficient setup.</p><div class="specs">
         <div><strong>50–70%</strong><small>of yearly hot water</small></div>
         <div><strong>Gas or oil</strong><small>Greenstar boiler pairing</small></div>
         <div><strong>Cylinder</strong><small>separate hot water store</small></div>
-      </div>
-      <p class="fit"><b>Best for:</b> south-facing roofs and homes with a regular or system boiler and cylinder.</p>
-    </div>
-  </section>
-
+      </div><p class="fit"><b>Best for:</b> south-facing roofs and homes with a regular or system boiler and cylinder.</p></div></div>
+    </details></div></section>
   <section class="block" style="padding-top:64px">
     <div class="sec-head">
       <div><span class="eyebrow">Side by side</span><h2>Which one suits your home?</h2></div>
@@ -789,11 +796,14 @@ body.covered header.site{position:static}
 
   <aside class="aside">
     <div class="box callbox"><small>Rather talk to someone?</small><strong>0776 776 7949</strong><small>Free, no-obligation estimates</small></div>
-    <div class="box">
-      <h3>Every visit comes with</h3>
-      <ul><li>Gas Safe registered engineers who show their ID card</li><li>Clear pricing before any work starts</li><li>90-day labour guarantee on plumbing</li><li>Up to 10 years' guarantee on selected new Worcester boilers</li></ul>
-    </div>
-    <div class="box"><h3>No heating or hot water?</h3><p style="font-size:.88rem;color:#3c3b3d">Choose Repair and tell us what's happening, or call the office. If you smell gas, leave the property and call the National Gas Emergency line on <b style="user-select:all">0800 111 999</b>.</p></div>
+    <details class="acc acc-sm">
+      <summary><span><b>Every visit comes with</b></span></summary>
+      <div class="acc-body"><ul><li>Gas Safe engineers who show their ID card</li><li>Clear pricing before any work starts</li><li>90-day labour guarantee on plumbing</li><li>Up to 10 years' guarantee on selected new Worcester boilers</li></ul></div>
+    </details>
+    <details class="acc acc-sm">
+      <summary><span><b>No heating or hot water?</b></span></summary>
+      <div class="acc-body"><p>Choose Repair and tell us what's happening, or call the office. If you smell gas, leave the property and call the National Gas Emergency line on <b style="user-select:all">0800 111 999</b>.</p></div>
+    </details>
   </aside>
 </div>
 </main>
