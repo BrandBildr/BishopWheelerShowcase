@@ -521,6 +521,96 @@ section.block{padding-block:72px}
 body.v-book .cta-band{display:none}
 @media (max-width:700px){.hero-figure .badge{max-width:180px;padding:8px 12px}.hero-figure .badge strong{font-size:1.3rem}}
 
+/* ===== Moorland-reference pass: quote tool, logo strip, FAQ ===== */
+.hdr-link{font-weight:600;font-size:.88rem;color:var(--navy);text-decoration:none;padding:10px 4px}
+.hdr-link:hover{text-decoration:underline}
+@media (max-width:1100px){.hdr-link{display:none}}
+
+/* logo strip */
+.trust .logos{display:flex;align-items:center;justify-content:space-between;gap:28px;padding-block:22px;flex-wrap:nowrap}
+.trust .logos img{height:52px;width:auto;flex:none}
+.trust .logos .lg-w{height:56px}
+.lg-txt{display:grid;gap:2px;line-height:1.2;border-left:1px solid var(--line);padding-left:20px}
+.lg-txt b{font-size:.9rem}
+.lg-txt small{font-size:.75rem;color:var(--char)}
+
+/* quote tool */
+.check .wrap{align-items:start}
+.check h2 .serif{color:#C9D4F2;font-weight:400}
+.q-points{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px;color:#DCE3F5;font-size:.92rem;font-weight:600}
+.q-points li{display:flex;gap:10px;align-items:center}
+.q-points svg path{stroke:#ff8a94}
+.q-tool{gap:18px;min-height:420px;align-content:start}
+.q-top{display:flex;justify-content:space-between;align-items:center;min-height:24px}
+.q-back{background:none;border:0;padding:0;font:600 .85rem var(--f-sans);color:var(--navy);cursor:pointer}
+.q-count{margin-left:auto;font:600 .72rem var(--f-mono);letter-spacing:.08em;color:var(--char);text-transform:uppercase}
+.q-bar{height:4px;background:var(--mist)}
+.q-bar i{display:block;height:100%;background:var(--red);transition:width .3s}
+.q-step h3{font-size:1.35rem;font-weight:800;letter-spacing:-.01em;margin-bottom:16px}
+.q-opts{display:grid;gap:10px}
+.q-icons{grid-template-columns:repeat(3,1fr)}
+.q-num{grid-template-columns:repeat(auto-fit,minmax(64px,1fr))}
+.q-text{grid-template-columns:1fr 1fr}
+.q-opt{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:64px;padding:14px 10px;background:#fff;border:2px solid var(--line);font:700 .95rem var(--f-sans);color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+.q-icons .q-opt{min-height:98px}
+.q-opt svg{color:var(--char)}
+.q-opt:hover{border-color:var(--navy)}
+.q-opt:active{transform:scale(.98)}
+.q-opt.on{border-color:var(--navy);background:var(--navy);color:#fff}
+.q-opt.on svg{color:#fff}
+.q-opt:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.q-result{display:grid;gap:12px}
+.q-result h3{margin:0;font-size:1.45rem;line-height:1.15}
+.q-why{color:#47464a;font-size:.92rem}
+.q-price{background:var(--frost);padding:16px 18px;display:grid;gap:2px;border-left:4px solid var(--red)}
+.q-price small{font-size:.75rem;font-weight:600;color:var(--char)}
+.q-price strong{font-size:1.9rem;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.q-price em{font:600 .66rem var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--char);font-style:normal}
+.q-inc{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:.88rem}
+.q-inc li{display:flex;gap:10px}
+.q-inc li::before{content:"";width:7px;height:7px;background:var(--red);margin-top:.5em;flex:none}
+.q-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.q-note{font-size:.75rem;color:var(--char)}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:56px;align-items:start}
+.faq-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;margin-top:12px}
+.faq-head p{color:#47464a;margin-top:12px}
+.faq .acc-body p{color:#47464a;max-width:40em}
+.faq .acc summary b{font-size:1rem}
+@media (max-width:860px){.faq{grid-template-columns:1fr;gap:18px}}
+
+/* action bar: icon call + two actions */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:700px){
+  .actbar{grid-template-columns:48px 1fr 1fr!important}
+  .ab-call{padding:0}
+  .ab-quote{background:var(--navy);color:#fff}
+  .ab-book{background:var(--red);color:#fff}
+  .actbar a{font-size:.9rem}
+
+  .trust .logos{gap:12px;padding-block:12px;overflow:visible}
+  .trust .logos img{height:34px}
+  .trust .logos .lg-w{height:36px}
+  .lg-txt:not(.lg-est){display:none}
+  .lg-txt{padding-left:12px}
+  .lg-txt b{font-size:.8rem}.lg-txt small{font-size:.68rem}
+
+  .q-points{display:none}
+  .q-tool{min-height:0;gap:14px}
+  .q-step h3{font-size:1.1rem;margin-bottom:12px}
+  .q-icons .q-opt{min-height:82px;padding:10px 6px;font-size:.82rem}
+  .q-icons svg{width:36px;height:31px}
+  .q-opt{min-height:54px;font-size:.9rem}
+  .q-result h3{font-size:1.2rem}
+  .q-price strong{font-size:1.5rem}
+  .q-actions .btn{flex:1 1 100%}
+  .faq-head p{display:none}
+  .faq-head h2{font-size:1.65rem}
+}
+.q-tool{min-height:0}
+@media (min-width:701px){.q-icons{grid-template-columns:repeat(5,1fr)}.q-icons .q-opt{min-height:96px;font-size:.85rem}}
+
 /* ===== BrandBildr concept front end (shared across showcases) ===== */
 .bb-tag{position:fixed;z-index:50;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--bb-ink);color:#fff;font:500 12px/1 var(--bb);letter-spacing:.02em;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .bb-tag i{width:8px;height:8px;border-radius:50%;background:var(--bb-blue)}
@@ -645,7 +735,7 @@ body.covered header.site{position:static}
       <h1>Right first time since 2001. <em>A website to match.</em></h1>
       <p class="cv-lede">A concept for a new bishopandwheeler.co.uk, built from your own logo, illustrations and words. Nothing here is live.</p>
       <div class="cv-inside">
-        <div><span class="cv-label">Home</span><b>Boiler check &amp; area map</b><span>Age and fuel in, the right next step out. Your map pin at the heart of South Devon.</span></div>
+        <div><span class="cv-label">Home</span><b>Instant boiler quote</b><span>Five taps to a recommended boiler and an indicative price, then a free survey.</span></div>
         <div><span class="cv-label">Heat pumps</span><b>Grants up front</b><span>Every system side by side, with the £7,500 Boiler Upgrade Scheme front and centre.</span></div>
         <div><span class="cv-label">Booking</span><b>Book a visit online</b><span>Service, repair or quote in four steps, replacing the callback form.</span></div>
       </div>
@@ -664,7 +754,7 @@ body.covered header.site{position:static}
   <a class="brand" href="#home" aria-label="Bishop &amp; Wheeler home"><img src="img/logo.png" alt="Bishop &amp; Wheeler Ltd. Heating, Plumbing, Solar" width="362" height="68"></a>
   <nav class="main" id="nav">
     <a href="#services" data-nav="home">Services</a>
-    <a href="#boiler-check">New boilers</a>
+    <a href="#quote">Boiler quote</a>
     <a href="#renewables" data-nav="renewables">Heat pumps &amp; solar</a>
     <a href="#about">About us</a>
     <a href="#area">Areas</a>
@@ -672,11 +762,12 @@ body.covered header.site{position:static}
   </nav>
   <div class="hdr-cta">
     <span class="hdr-phone"><small>Call the office</small><strong>0776 776 7949</strong></span>
-    <a class="btn btn-red" href="#book">Book a visit</a>
+    <a class="hdr-link" href="#book">Book a visit</a>
+    <a class="btn btn-red" href="#quote">Instant quote</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu" onclick="var n=document.getElementById('nav');n.style.top=this.closest('header').getBoundingClientRect().bottom+'px';var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o);this.setAttribute('aria-label',o?'Close menu':'Open menu');document.body.classList.toggle('menu-open',o)"><span></span><span></span><span></span></button>
   </div>
 </div></header>
-<div class="actbar"><a class="ab-call" href="tel:07767767949"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a><a class="ab-book" href="#book">Book a visit</a></div></div>
+<div class="actbar"><a class="ab-call" href="tel:07767767949"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span class="sr">Call</span></a><a class="ab-quote" href="#quote">Instant quote</a><a class="ab-book" href="#book">Book a visit</a></div></div>
 
 <main class="view" id="v-home">
 <section class="hero"><div class="wrap hero-grid">
@@ -685,7 +776,7 @@ body.covered header.site{position:static}
     <h1>Warm homes across South Devon, <span class="serif">since 2001.</span></h1>
     <p class="lede">Boilers fitted, serviced and fixed by a family-run team of Gas Safe engineers. Worcester Accredited, so a new boiler can come with up to 10 years' guarantee.</p>
     <div class="hero-actions">
-      <a class="btn btn-red" href="#book" data-job="quote">Get a boiler quote</a>
+      <a class="btn btn-red" href="#quote">Get an instant quote</a>
       <a class="btn btn-ghost" href="#book" data-job="service" style="color:var(--navy)">Book a service</a>
     </div>
     <div class="hero-meta"><span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Free, no-obligation quotes</span><span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Gas, oil &amp; heat pumps</span></div>
@@ -701,11 +792,13 @@ body.covered header.site{position:static}
 </div>
 </section>
 
-<section class="trust" id="accreditations"><div class="wrap">
-  <div><strong>Gas Safe registered</strong><small class="mono">Reg. 96371</small></div>
-  <div><strong>OFTEC registered</strong><small class="mono">Reg. C6630 · oil heating</small></div>
-  <div><strong>Worcester Accredited</strong><small>Bosch Group installer</small></div>
-  <div><strong>Est. 2001</strong><small>25 years in South Devon</small></div>
+<section class="trust" id="accreditations"><div class="wrap logos">
+  <img src="img/acc-logo1.png" alt="Worcester Bosch Group Accredited Installer" width="159" height="79" class="lg-w">
+  <img src="img/acc-logo2.png" alt="Gas Safe Register" width="69" height="72">
+  <img src="img/acc-logo3.png" alt="OFTEC registered" width="66" height="69">
+  <span class="lg-txt"><b>Gas Safe</b><small class="mono">96371</small></span>
+  <span class="lg-txt"><b>OFTEC</b><small class="mono">C6630</small></span>
+  <span class="lg-txt lg-est"><b>Est. 2001</b><small>Family run</small></span>
 </div></section>
 
 <section class="block" id="services"><div class="wrap">
@@ -714,40 +807,34 @@ body.covered header.site{position:static}
     <p>From a dripping tap to a whole new heating system. Every job, large or small, gets done right first time by our own qualified engineers.</p>
   </div>
   <div class="services">
-    <a class="svc" href="#boiler-check"><div class="ill"><img src="img/icon-boiler.png" alt="" width="48" height="67"></div><h3>Boiler installs</h3><p>Gas and oil Worcester boilers, sized for your home and fitted with an extended guarantee.</p><span class="more">Check your boiler</span></a>
+    <a class="svc" href="#quote"><div class="ill"><img src="img/icon-boiler.png" alt="" width="48" height="67"></div><h3>Boiler installs</h3><p>Gas and oil Worcester boilers, sized for your home and fitted with an extended guarantee.</p><span class="more">Get a price</span></a>
     <a class="svc" href="#book" data-job="service"><div class="ill"><img src="img/icon-tools.png" alt="" width="66" height="65"></div><h3>Repairs &amp; servicing</h3><p>Annual services, breakdowns, power flushing, cold radiators and landlord gas safety certificates.</p><span class="more">Book a service</span></a>
     <a class="svc" href="#all-services"><div class="ill"><img src="img/icon-tap.png" alt="" width="70" height="67"></div><h3>Plumbing</h3><p>Leaks, burst pipes, showers, bathrooms, cylinders and unvented hot water. 90-day labour guarantee.</p><span class="more">See every job we do</span></a>
     <a class="svc" href="#renewables"><div class="ill"><img src="img/icon-solar.png" alt="" width="75" height="75"></div><h3>Renewable energy</h3><p>Air and ground source heat pumps and solar hot water, with grant support where you qualify.</p><span class="more">Explore heat pumps</span></a>
   </div>
 </div></section>
 
-<section class="check" id="boiler-check"><div class="wrap">
-  <div>
-    <span class="eyebrow">Is it time for a new boiler?</span>
-    <h2>Older boilers can turn as little as 60% of their fuel into heat.</h2>
-    <p class="lead">A modern Worcester condensing boiler runs at over 90%. Tell us roughly how old yours is and what it runs on, and we'll point you to the right next step.</p>
+<section class="check" id="quote"><div class="wrap">
+  <div class="q-intro">
+    <span class="eyebrow">Instant boiler quote</span>
+    <h2>A price for your new boiler <span class="serif">in 60 seconds.</span></h2>
+    <p class="lead">Five quick taps. We'll recommend the right boiler for your home and give you an indicative price, then fix it after a free survey.</p>
+    <ul class="q-points"><li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>No email needed to see a price</li><li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Worcester Accredited, up to 10 years' guarantee</li></ul>
   </div>
-  <form class="tool" id="bcheck" onsubmit="return false">
-    <fieldset>
-      <div class="age-row"><label for="age">Age of your boiler</label><output id="ageOut" for="age">12 years</output></div>
-      <input type="range" id="age" min="1" max="25" value="12" aria-describedby="ageOut">
-    </fieldset>
-    <fieldset>
-      <legend>It runs on</legend>
-      <div class="seg">
-        <input type="radio" name="fuel" id="f-gas" value="gas" checked><label for="f-gas">Mains gas</label>
-        <input type="radio" name="fuel" id="f-oil" value="oil"><label for="f-oil">Oil</label>
-        <input type="radio" name="fuel" id="f-lpg" value="lpg"><label for="f-lpg">LPG / electric</label>
-      </div>
-    </fieldset>
-    <div class="eff" aria-label="Efficiency comparison">
-      <div class="eff-row"><span>Yours (est.)</span><span class="eff-bar"><i id="barOld" style="width:68%;background:var(--char)"></i></span><span class="mono" id="effOld">68%</span></div>
-      <div class="eff-row"><span>New Worcester</span><span class="eff-bar"><i style="width:92%;background:var(--red)"></i></span><span class="mono">90%+</span></div>
+  <div class="tool q-tool" id="qtool" aria-live="polite">
+    <div class="q-top"><button type="button" class="q-back" id="qBack" hidden>&larr; Back</button><span class="q-count" id="qCount">1 of 5</span></div>
+    <div class="q-bar"><i id="qBar" style="width:20%"></i></div>
+    <div class="q-step" data-step="1"><h3>What type of home do you live in?</h3><div class="q-opts q-icons"><button type="button" class="q-opt" data-k="home" data-v="detached"><svg viewBox="0 0 44 38" width="44" height="38" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 22 20 10l14 12"/><path d="M9 20v14h22V20"/><rect x="17" y="26" width="6" height="8"/><rect x="11.5" y="23" width="4" height="4"/><rect x="24.5" y="23" width="4" height="4"/></svg><span>Detached</span></button><button type="button" class="q-opt" data-k="home" data-v="semi"><svg viewBox="0 0 44 38" width="44" height="38" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M2 22 12 13l10 9 10-9 10 9"/><path d="M4 20v14h16V20M24 20v14h16V20"/><rect x="9" y="27" width="5" height="7"/><rect x="29" y="27" width="5" height="7"/></svg><span>Semi</span></button><button type="button" class="q-opt" data-k="home" data-v="terraced"><svg viewBox="0 0 44 38" width="44" height="38" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M1 20h42M1 20l5-6h32l5 6"/><path d="M3 20v14h38V20"/><path d="M15.7 20v14M28.3 20v14"/><rect x="7" y="27" width="4" height="7"/><rect x="20" y="27" width="4" height="7"/><rect x="33" y="27" width="4" height="7"/></svg><span>Terraced</span></button><button type="button" class="q-opt" data-k="home" data-v="flat"><svg viewBox="0 0 44 38" width="44" height="38" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="10" y="6" width="22" height="28"/><path d="M15 11h4M23 11h4M15 17h4M23 17h4M15 23h4M23 23h4"/><rect x="18" y="28" width="6" height="6"/></svg><span>Flat</span></button><button type="button" class="q-opt" data-k="home" data-v="bungalow"><svg viewBox="0 0 44 38" width="44" height="38" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 22 21 13l18 9"/><path d="M6 21v13h30V21"/><rect x="18" y="27" width="6" height="7"/><rect x="9" y="25" width="5" height="4"/><rect x="28" y="25" width="5" height="4"/></svg><span>Bungalow</span></button></div></div><div class="q-step" data-step="2" hidden><h3>How many bedrooms?</h3><div class="q-opts q-num"><button type="button" class="q-opt" data-k="beds" data-v="1"><span>1</span></button><button type="button" class="q-opt" data-k="beds" data-v="2"><span>2</span></button><button type="button" class="q-opt" data-k="beds" data-v="3"><span>3</span></button><button type="button" class="q-opt" data-k="beds" data-v="4"><span>4</span></button><button type="button" class="q-opt" data-k="beds" data-v="5"><span>5+</span></button></div></div><div class="q-step" data-step="3" hidden><h3>How many bathrooms and en-suites?</h3><div class="q-opts q-num"><button type="button" class="q-opt" data-k="baths" data-v="1"><span>1</span></button><button type="button" class="q-opt" data-k="baths" data-v="2"><span>2</span></button><button type="button" class="q-opt" data-k="baths" data-v="3"><span>3+</span></button></div></div><div class="q-step" data-step="4" hidden><h3>Do you have a hot water tank?</h3><div class="q-opts q-num"><button type="button" class="q-opt" data-k="tank" data-v="yes"><span>Yes</span></button><button type="button" class="q-opt" data-k="tank" data-v="no"><span>No</span></button><button type="button" class="q-opt" data-k="tank" data-v="unsure"><span>Not sure</span></button></div></div><div class="q-step" data-step="5" hidden><h3>What does your heating run on?</h3><div class="q-opts q-text"><button type="button" class="q-opt" data-k="fuel" data-v="gas"><span>Mains gas</span></button><button type="button" class="q-opt" data-k="fuel" data-v="oil"><span>Oil</span></button><button type="button" class="q-opt" data-k="fuel" data-v="lpg"><span>LPG</span></button><button type="button" class="q-opt" data-k="fuel" data-v="elec"><span>Electric only</span></button></div></div>
+    <div class="q-step q-result" data-step="6" hidden>
+      <span class="eyebrow" style="color:var(--red)">Our recommendation</span>
+      <h3 id="rTitle"></h3>
+      <p id="rWhy" class="q-why"></p>
+      <div class="q-price"><small>Indicative price, fitted</small><strong id="rPrice"></strong><em>Example pricing for this concept</em></div>
+      <ul class="q-inc" id="rInc"></ul>
+      <div class="q-actions"><a class="btn btn-red" id="rBook" href="#book" data-job="quote">Book a free survey</a><button type="button" class="btn btn-ghost" id="qAgain" style="color:var(--navy)">Start again</button></div>
+      <p class="q-note">Your fixed price is confirmed after a free, no-obligation survey.</p>
     </div>
-    <div class="verdict" aria-live="polite"><strong id="vTitle">Worth getting a quote</strong><p id="vText"></p></div>
-    <a class="btn btn-red" id="vCta" href="#book" data-job="quote">Get my free quote</a>
-    <p style="font-size:.75rem;color:var(--char)">A rough guide only. We’ll check your actual boiler and system on a visit.</p>
-  </form>
+  </div>
 </div></section>
 
 <section class="block" id="about"><div class="wrap story">
@@ -789,13 +876,11 @@ body.covered header.site{position:static}
   <div class="map-box"><svg viewBox="0 0 640 470" role="img" aria-label="Map of South Devon showing the Bishop and Wheeler service area around Ivybridge, from Plymouth to Paignton and up to Exeter"><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#D9DDE8" stroke-width=".6"/></pattern><radialGradient id="reach" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#23408F" stop-opacity=".20"/><stop offset="1" stop-color="#23408F" stop-opacity="0"/></radialGradient></defs><rect width="640" height="470" fill="#E6ECF7"/><rect width="640" height="470" fill="url(#grid)"/><polygon points="0,0 640,0 640,117.5 640.0,117.5 571.4,117.5 565.7,133.2 560.0,156.7 542.9,188.0 525.7,227.2 508.6,250.7 494.3,274.2 497.1,297.7 514.3,313.3 497.1,336.8 480.0,344.7 457.1,376.0 445.7,407.3 440.0,434.7 405.7,442.6 377.1,446.5 354.3,438.7 331.4,415.2 314.3,391.7 291.4,383.8 268.6,376.0 240.0,372.1 205.7,368.2 182.9,352.5 165.7,340.8 151.4,329.0 131.4,332.9 114.3,348.6 68.6,352.5 0.0,352.5 0,352.5" fill="#FFFFFF" stroke="#23408F" stroke-width="1.6" stroke-linejoin="round"/><ellipse cx="285.7" cy="164.5" rx="96" ry="66" fill="#E7E7E8" /><text x="285.7" y="168.5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="3" fill="#58585A">DARTMOOR</text><circle cx="285.7" cy="305.5" r="190" fill="url(#reach)"/><circle cx="285.7" cy="305.5" r="70" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><circle cx="285.7" cy="305.5" r="140" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><circle cx="285.7" cy="305.5" r="210" fill="none" stroke="#23408F" stroke-opacity=".25" stroke-dasharray="3 5"/><text x="251.4" y="423.0" font-family="Libre Caslon Text, Georgia, serif" font-style="italic" font-size="15" fill="#23408F" fill-opacity=".7">English Channel</text><text x="68.6" y="383.8" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#23408F" fill-opacity=".6">CORNWALL</text><circle cx="160.0" cy="317.3" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="151.0" y="321.3" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Plymouth</text><circle cx="302.9" cy="336.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="311.9" y="340.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Modbury</text><circle cx="365.7" cy="387.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="374.7" y="391.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Kingsbridge</text><circle cx="417.1" cy="274.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="426.1" y="278.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Totnes</text><circle cx="488.6" cy="270.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="497.6" y="274.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Paignton</text><circle cx="480.0" cy="335.3" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="471.0" y="339.3" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Dartmouth</text><circle cx="157.1" cy="180.2" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="166.1" y="184.2" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Tavistock</text><circle cx="462.9" cy="195.8" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="471.9" y="199.8" text-anchor="start" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Newton Abbot</text><circle cx="508.6" cy="47.0" r="4.5" fill="#ED1B2E" stroke="#fff" stroke-width="2"/><text x="499.6" y="51.0" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="12.5" fill="#231F20" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Exeter</text><image href="img/contact-map.png" x="268.7" y="265.5" width="34" height="36"/><rect x="137.7" y="243.5" width="122" height="40" fill="#23408F"/><path d="M259.7 263.5 L271.7 283.5" stroke="#23408F" stroke-width="1.5"/><text x="147.7" y="260.5" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="13" fill="#fff">Ivybridge</text><text x="147.7" y="274.5" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1" fill="#DCE3F5">OUR BASE · PL21</text></svg><span class="map-legend">SCHEMATIC · NOT TO SCALE</span></div>
 </div></section>
 
-<section class="block" id="all-services" style="padding-top:0"><div class="wrap">
-  <details class="acc acc-lg">
-    <summary><span><span class="eyebrow">The full list</span><b>Every job we take on</b></span><em>26 services</em></summary>
-    <div class="acc-body"><ul class="az">
+<section class="block" id="all-services" style="padding-top:0"><div class="wrap faq">
+  <div class="faq-head"><span class="eyebrow">Questions</span><h2>Good to know</h2><p>Still unsure? Call the office on <b style="user-select:all">0776 776 7949</b>.</p></div>
+  <div class="acc-group"><details class="acc"><summary><span><b>Every job we take on</b></span><em>26 services</em></summary><div class="acc-body"><ul class="az">
     <li>Boiler installation</li><li>Boiler repairs</li><li>Burst pipes</li><li>Central heating installations</li><li>Energy efficiency advice</li><li>Gas hob &amp; oven fitting</li><li>Gas safety inspections</li><li>General plumbing</li><li>Ground source heat pumps</li><li>Air to air &amp; air to water heat pumps</li><li>Heated towel rails</li><li>Immersion heaters &amp; tanks</li><li>Kitchen sinks &amp; waste disposals</li><li>Landlord safety certificates</li><li>Leaks &amp; overflows</li><li>Power flushing</li><li>Pump repairs</li><li>Replacement radiators</li><li>Saniflo units</li><li>Shower &amp; bathroom fitting</li><li>Solar panels &amp; solar heating</li><li>Thermostatic radiator valves</li><li>Toilet &amp; tap fitting</li><li>Underfloor heating</li><li>Unvented hot water systems</li><li>Washing machines &amp; dishwashers</li>
-  </ul></div>
-  </details>
+  </ul></div></details><details class="acc"><summary><span><b>Are your engineers Gas Safe registered?</b></span></summary><div class="acc-body"><p>Yes. Bishop &amp; Wheeler is on the Gas Safe Register (no. 96371) and every engineer carries their Gas Safe ID card. Ask to see it on any visit.</p></div></details><details class="acc"><summary><span><b>Do you work on oil boilers?</b></span></summary><div class="acc-body"><p>Yes. We’re OFTEC registered (no. C6630) for oil heating, from servicing and repairs to full oil boiler replacements.</p></div></details><details class="acc"><summary><span><b>What guarantee comes with a new boiler?</b></span></summary><div class="acc-body"><p>As Worcester Accredited Installers we can offer up to 10 years’ guarantee on selected Worcester boilers, against the standard 2 years. Plumbing work carries a 90-day labour guarantee.</p></div></details><details class="acc"><summary><span><b>Do you do landlord gas safety certificates?</b></span></summary><div class="acc-body"><p>Yes. We carry out annual gas safety inspections and issue landlord certificates, and can look after every property in your portfolio.</p></div></details><details class="acc"><summary><span><b>Which areas do you cover?</b></span></summary><div class="acc-body"><p>Plymouth, Ivybridge, the South Hams and Torbay, plus the EX and TQ postcodes beyond. Pop your postcode in when you book and we’ll confirm.</p></div></details></div>
 </div></section>
 </main>
 
@@ -1063,7 +1148,7 @@ body.covered header.site{position:static}
     <span class="lab" style="margin-top:40px">What the concept shows off</span>
     <div class="show">
       <div><b>Online booking</b><p>A four-step service, repair or quote request with a day picker, replacing the callback form.</p></div>
-      <div><b>Boiler check</b><p>Age and fuel in, a clear next step out. Turns browsers into quote requests.</p></div>
+      <div><b>Instant boiler quote</b><p>Five taps to a recommended boiler and an indicative price, modelled on the Moorland Heating flow you liked. Leads straight into a survey booking.</p></div>
       <div><b>An illustrated area map</b><p>Ivybridge at the centre, Plymouth to Paignton, drawn around their own map pin.</p></div>
       <div><b>Heat pumps &amp; grants</b><p>A proper renewables page with the Boiler Upgrade Scheme and a side-by-side comparison.</p></div>
     </div>
@@ -1100,7 +1185,7 @@ body.covered header.site{position:static}
       <p style="margin-top:16px;max-width:30em">Family-run heating and plumbing engineers serving Plymouth, the South Hams and Torbay since 2001.</p>
       <div class="regs"><span>GAS SAFE 96371</span><span>OFTEC C6630</span><span>WORCESTER ACCREDITED</span></div>
     </div>
-    <div class="foot-links"><h4>Services</h4><ul><li><a href="#boiler-check">Boiler installation</a></li><li><a href="#book" data-job="service">Boiler servicing</a></li><li><a href="#book" data-job="repair">Repairs &amp; breakdowns</a></li><li><a href="#services">Plumbing</a></li><li><a href="#renewables">Heat pumps &amp; solar</a></li></ul></div>
+    <div class="foot-links"><h4>Services</h4><ul><li><a href="#quote">Boiler quote</a></li><li><a href="#book" data-job="service">Boiler servicing</a></li><li><a href="#book" data-job="repair">Repairs &amp; breakdowns</a></li><li><a href="#services">Plumbing</a></li><li><a href="#renewables">Heat pumps &amp; solar</a></li></ul></div>
     <div class="foot-links"><h4>Company</h4><ul><li><a href="#about">About us</a></li><li><a href="#area">Areas we cover</a></li><li><a href="#accreditations">Accreditations</a></li><li><a href="#book">Book a visit</a></li></ul></div>
     <div><h4>Get in touch</h4><ul><li style="user-select:all;color:#fff;font-weight:700;font-size:1.05rem">0776 776 7949</li><li>Uplands, Exeter Road<br>Ivybridge, PL21 0BD</li><li>Free, no-obligation quotes</li></ul></div>
   </div>
@@ -1108,21 +1193,46 @@ body.covered header.site{position:static}
 </footer></div>
 <script>
 (function(){
-  var age=document.getElementById('age'),out=document.getElementById('ageOut');
-  var bar=document.getElementById('barOld'),eff=document.getElementById('effOld');
-  var t=document.getElementById('vTitle'),x=document.getElementById('vText'),cta=document.getElementById('vCta');
-  function run(){
-    var a=+age.value,f=(document.querySelector('input[name=fuel]:checked')||{}).value;
-    out.textContent=a+(a===1?' year':' years');
-    var e=a<=8?90:a<=12?82:a<=15?74:a<=20?66:60;
-    bar.style.width=e+'%';eff.textContent=e+'%';
-    if(f!=='gas'&&a>=10){t.textContent='Look at a heat pump';x.textContent='Off the gas grid with a '+a+'-year-old boiler, an air to water heat pump could replace it outright. Grants of up to £9,000 are available for off-gas homes until 31 March 2027.';cta.textContent='Get a heat pump quote';cta.href='renewables.html';}
-    else if(a>=10){t.textContent='Worth getting a quote';x.textContent='At '+a+' years old, a new Worcester condensing boiler could save you around 30% on heating bills, with up to 10 years’ guarantee.';cta.textContent='Get my free quote';cta.href='book.html#quote';}
-    else{t.textContent='Keep it serviced';x.textContent='At '+a+(a===1?' year':' years')+' old your boiler has plenty left in it. An annual service keeps it efficient, safe and inside its guarantee.';cta.textContent='Book a service';cta.href='book.html#service';}
+  var tool=document.getElementById('qtool');if(!tool)return;
+  var a={},step=1,N=5,steps=tool.querySelectorAll('.q-step'),bar=document.getElementById('qBar'),cnt=document.getElementById('qCount'),back=document.getElementById('qBack');
+  function go(n){step=n;steps.forEach(function(s){s.hidden=+s.dataset.step!==n});
+    bar.style.width=Math.min(n,N)/N*100+'%';cnt.textContent=n>N?'Your result':n+' of '+N;back.hidden=n===1;}
+  function money(x){return '\u00a3'+x.toLocaleString('en-GB')}
+  function result(){
+    var beds=+a.beds,baths=+a.baths,fuel=a.fuel,sys=baths>=2||beds>=4,type,kw,lo,hi,why,inc;
+    var t=document.getElementById('rTitle'),w=document.getElementById('rWhy'),p=document.getElementById('rPrice'),l=document.getElementById('rInc'),b=document.getElementById('rBook');
+    if(fuel==='elec'){
+      t.textContent='An air to water heat pump';
+      w.textContent='Without gas or oil, a heat pump is the most efficient way to heat your home and hot water.';
+      p.textContent='Grant of up to \u00a37,500';
+      inc=['Survey and heat loss calculation','Boiler Upgrade Scheme grant handled for you','Hot water cylinder included'];
+      b.textContent='Book a heat pump survey';b.dataset.job='heatpump';
+    }else{
+      kw=sys?(beds<=2?'15\u201318kW':beds===3?'18\u201324kW':beds===4?'24\u201330kW':'30kW+'):(beds<=2?'24\u201325kW':beds===3?'25\u201330kW':'30\u201335kW');
+      var f=fuel==='oil'?'oil ':fuel==='lpg'?'LPG ':'';
+      type=sys?f+'system boiler with an unvented cylinder':f+'combi boiler';
+      t.textContent='A '+kw+' '+type;
+      why=sys?'With '+baths+(baths===1?' bathroom':' bathrooms')+' and '+beds+(beds===5?'+':'')+' bedrooms, stored hot water keeps showers strong when more than one tap is running.'
+             :'Hot water on demand suits a '+beds+'-bedroom home with one bathroom'+(a.tank==='yes'?', and freeing up the airing cupboard is a bonus: we take the old tank out.':'.');
+      w.textContent=why;
+      var base=sys?[3800,5200]:[2300,3200];if(fuel==='oil')base=[base[0]+1300,base[1]+1000];if(fuel==='lpg')base=[base[0]+200,base[1]+200];
+      p.textContent=money(base[0])+' \u2013 '+money(base[1]);
+      inc=['Worcester boiler fitted by our Gas Safe'+(fuel==='oil'?' and OFTEC':'')+' engineers','Old boiler'+(a.tank==='yes'&&!sys?' and tank':'')+' removed and recycled','Up to 10 years\u2019 guarantee on selected models'];
+      b.textContent='Book a free survey';b.dataset.job='quote';
+    }
+    l.innerHTML='';inc.forEach(function(x){var li=document.createElement('li');li.textContent=x;l.appendChild(li)});
+    var notes=document.getElementById('notes'),fs=document.getElementById('fuel');
+    var sum='Instant quote: '+a.home+', '+a.beds+' bed, '+a.baths+' bath, tank '+a.tank+', '+({gas:'mains gas',oil:'oil',lpg:'LPG',elec:'electric only'})[fuel]+'. Suggested: '+t.textContent+'.';
+    b.onclick=function(){if(notes)notes.value=sum;if(fs){fs.value=({gas:'Mains gas',oil:'Oil',lpg:'LPG',elec:'Electric'})[fuel]}};
   }
-  age.addEventListener('input',run);
-  document.querySelectorAll('input[name=fuel]').forEach(function(r){r.addEventListener('change',run)});
-  run();
+  tool.addEventListener('click',function(e){
+    var o=e.target.closest('.q-opt');if(!o)return;
+    o.parentNode.querySelectorAll('.q-opt').forEach(function(x){x.classList.toggle('on',x===o)});
+    a[o.dataset.k]=o.dataset.v;
+    setTimeout(function(){if(step<N){go(step+1)}else{result();go(N+1)}},160);
+  });
+  back.addEventListener('click',function(){if(step>1)go(step-1)});
+  document.getElementById('qAgain').addEventListener('click',function(){a={};tool.querySelectorAll('.q-opt.on').forEach(function(x){x.classList.remove('on')});go(1)});
 })();
 
 
