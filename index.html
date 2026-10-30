@@ -667,6 +667,27 @@ nav.main a,.hdr-phone strong,.hdr-link,.hdr-cta .btn{white-space:nowrap}
 }
 .mq-item.mq-txt{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:2px}
 
+/* ===== Marquee v2: equal cells ===== */
+.mq-set{display:flex;align-items:stretch}
+.mq-item,.mq-item.mq-txt{width:212px;height:80px;padding:0 18px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:12px;border-right:1px solid var(--line);flex:none}
+.mq-media{width:40px;height:40px;display:grid;place-items:center;flex:none}
+.mq-media img{max-width:40px;max-height:40px;width:auto;height:auto;mix-blend-mode:multiply}
+.mq-ico{color:var(--navy);width:34px;height:34px}
+.mq-copy{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:96px}
+.mq-copy b{font-size:.9rem;font-weight:700;line-height:1.1;color:var(--ink);white-space:nowrap}
+.mq-copy small{font:500 .7rem/1.1 var(--f-mono);color:var(--char);white-space:nowrap}
+.mq-logo img{height:auto;width:auto;max-height:48px;max-width:150px;mix-blend-mode:multiply}
+@media (max-width:700px){
+  .mq-item,.mq-item.mq-txt{width:172px;height:64px;padding:0 12px;gap:10px}
+  .mq-media{width:32px;height:32px}
+  .mq-media img{max-width:32px;max-height:32px}
+  .mq-ico{width:28px;height:28px}
+  .mq-copy{min-width:84px}
+  .mq-copy b{font-size:.8rem}
+  .mq-copy small{font-size:.63rem}
+  .mq-logo img{max-height:38px;max-width:126px}
+}
+
 /* ===== BrandBildr concept front end (shared across showcases) ===== */
 .bb-tag{position:fixed;z-index:50;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--bb-ink);color:#fff;font:500 12px/1 var(--bb);letter-spacing:.02em;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .bb-tag i{width:8px;height:8px;border-radius:50%;background:var(--bb-blue)}
@@ -849,24 +870,7 @@ body.covered header.site{position:static}
 </section>
 
 <section class="trust" id="accreditations" aria-label="Accreditations"><div class="marquee">
-  <div class="mq-track">
-    <div class="mq-set">
-    <span class="mq-item"><img src="img/acc-logo1.png" alt="Worcester Bosch Group Accredited Installer" width="159" height="79" class="mq-w"></span>
-    <span class="mq-item"><img src="img/acc-logo2.png" alt="Gas Safe Register" width="69" height="72"><span><b>Gas Safe</b><small>Reg. 96371</small></span></span>
-    <span class="mq-item"><img src="img/acc-logo3.png" alt="OFTEC" width="66" height="69"><span><b>OFTEC</b><small>Reg. C6630</small></span></span>
-    <span class="mq-item mq-txt"><b>Est. 2001</b><small>Family run</small></span>
-    <span class="mq-item mq-txt"><b>Up to 10 years</b><small>Boiler guarantee</small></span>
-    <span class="mq-item mq-txt"><b>Free quotes</b><small>No obligation</small></span>
-    </div>
-    <div class="mq-set" aria-hidden="true">
-    <span class="mq-item"><img src="img/acc-logo1.png" alt="" data-alt="Worcester Bosch Group Accredited Installer" width="159" height="79" class="mq-w"></span>
-    <span class="mq-item"><img src="img/acc-logo2.png" alt="" data-alt="Gas Safe Register" width="69" height="72"><span><b>Gas Safe</b><small>Reg. 96371</small></span></span>
-    <span class="mq-item"><img src="img/acc-logo3.png" alt="" data-alt="OFTEC" width="66" height="69"><span><b>OFTEC</b><small>Reg. C6630</small></span></span>
-    <span class="mq-item mq-txt"><b>Est. 2001</b><small>Family run</small></span>
-    <span class="mq-item mq-txt"><b>Up to 10 years</b><small>Boiler guarantee</small></span>
-    <span class="mq-item mq-txt"><b>Free quotes</b><small>No obligation</small></span>
-    </div>
-  </div>
+  <div class="mq-track"><div class="mq-set"><span class="mq-item mq-logo"><img src="img/acc-logo1.png" alt="Worcester Bosch Group Accredited Installer" width="159" height="79"></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo2.png" alt="Gas Safe Register" width="69" height="72"></span><span class="mq-copy"><b>Gas Safe</b><small>Reg. 96371</small></span></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo3.png" alt="OFTEC" width="66" height="69"></span><span class="mq-copy"><b>OFTEC</b><small>Reg. C6630</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></svg></span><span class="mq-copy"><b>Est. 2001</b><small>Family run</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M16 4 26 8v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg></span><span class="mq-copy"><b>10 years</b><small>Boiler guarantee</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12.5 17h8M12.5 22h8"/></svg></span><span class="mq-copy"><b>Free quotes</b><small>No obligation</small></span></span></div><div class="mq-set" aria-hidden="true"><span class="mq-item mq-logo"><img src="img/acc-logo1.png" alt="" width="159" height="79"></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo2.png" alt="" width="69" height="72"></span><span class="mq-copy"><b>Gas Safe</b><small>Reg. 96371</small></span></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo3.png" alt="" width="66" height="69"></span><span class="mq-copy"><b>OFTEC</b><small>Reg. C6630</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></svg></span><span class="mq-copy"><b>Est. 2001</b><small>Family run</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M16 4 26 8v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg></span><span class="mq-copy"><b>10 years</b><small>Boiler guarantee</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12.5 17h8M12.5 22h8"/></svg></span><span class="mq-copy"><b>Free quotes</b><small>No obligation</small></span></span></div></div>
 </div></section>
 
 <section class="block" id="services"><div class="wrap">
