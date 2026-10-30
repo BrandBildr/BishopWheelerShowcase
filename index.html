@@ -688,6 +688,24 @@ nav.main a,.hdr-phone strong,.hdr-link,.hdr-cta .btn{white-space:nowrap}
   .mq-logo img{max-height:38px;max-width:126px}
 }
 
+/* ===== Header polish + alternating sections ===== */
+.brand{flex:none;display:block;line-height:0}
+.brand img{max-width:none;height:44px;width:auto;aspect-ratio:362/68}
+@media (min-width:981px){
+  header.site .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;padding-block:16px}
+  nav.main{justify-content:center;gap:4px}
+  nav.main a{padding:10px 12px;font-size:.9rem}
+  .hdr-cta{gap:22px}
+  .hdr-phone{padding-right:22px;border-right:1px solid var(--line)}
+  .hdr-link{padding:12px 18px;border:2px solid var(--navy);font-weight:700}
+  .hdr-link:hover{text-decoration:none;background:var(--navy);color:#fff}
+}
+@media (min-width:981px) and (max-width:1240px){nav.main a{padding:10px 8px;font-size:.86rem}header.site .wrap{gap:20px}}
+@media (max-width:700px){.brand img{height:32px}}
+@media (min-width:761px){.renew-row{grid-template-columns:1.25fr .75fr}.renew-row>img{order:2}}
+header.site .wrap,.concept-bar .wrap{max-width:1320px}
+@media (max-width:1420px){.hdr-link{display:none!important}}
+
 /* ===== BrandBildr concept front end (shared across showcases) ===== */
 .bb-tag{position:fixed;z-index:50;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--bb-ink);color:#fff;font:500 12px/1 var(--bb);letter-spacing:.02em;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .bb-tag i{width:8px;height:8px;border-radius:50%;background:var(--bb-blue)}
