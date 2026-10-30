@@ -797,6 +797,15 @@ body.covered .bb-tag{display:none}
 body.bp-on header.site,body.bp-on .topbar{display:none}
 .bp .logo-box div{min-height:130px}
 .typerow .s{border:0!important;padding:0!important;border-radius:0!important}
+@media (min-width:701px) and (max-height:860px){
+  .cover .cv{padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .cv-main{gap:18px;padding-block:20px}
+  .cv-main h1{font-size:clamp(40px,8vh,76px)}
+  .cv-lede{font-size:17px}
+  .cv-inside div{padding:14px 16px;gap:6px}
+  .cv-btn{padding:16px 22px}
+}
+@media (max-width:700px){.cv-inside div{grid-template-columns:104px minmax(0,1fr)!important}.cv-inside .cv-label{white-space:nowrap}}
 .bp .wrap{max-width:1180px}
 body.covered header.site{position:static}
 </style>
@@ -818,7 +827,6 @@ body.covered header.site{position:static}
       </div>
       <div class="cv-actions">
         <button class="cv-btn" type="button" id="enterBtn">View the concept <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <a class="cv-link" href="#brandpack" id="bpLink">Read the brand pack</a>
       </div>
     </div>
     <div class="cv-foot"><span>George, BrandBildr · <span class="sel">George@BrandBildr.com</span></span><span>instagram.com/brand.bildr</span></div>
@@ -851,7 +859,7 @@ body.covered header.site{position:static}
   <div>
     <span class="eyebrow">Ivybridge · Plymouth · South Hams · Torbay</span>
     <h1>Warm homes across South Devon, <span class="serif">since 2001.</span></h1>
-    <p class="lede">Boilers fitted, serviced and fixed by a team of Gas Safe engineers. Worcester Accredited, so a new boiler can come with up to 10 years' guarantee.</p>
+    <p class="lede">Boilers fitted, serviced and fixed by a team of Gas Safe engineers. Worcester Accredited, so a new boiler can come with up to 10 years’ guarantee.</p>
     <div class="hero-actions">
       <a class="btn btn-red" href="#quote">Get an instant quote</a>
       <a class="btn btn-ghost" href="#book" data-job="service" style="color:var(--navy)">Book a service</a>
@@ -870,7 +878,7 @@ body.covered header.site{position:static}
 </section>
 
 <section class="trust" id="accreditations" aria-label="Accreditations"><div class="marquee">
-  <div class="mq-track"><div class="mq-set"><span class="mq-item mq-logo"><img src="img/acc-logo1.png" alt="Worcester Bosch Group Accredited Installer" width="159" height="79"></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo2.png" alt="Gas Safe Register" width="69" height="72"></span><span class="mq-copy"><b>Gas Safe</b><small>Reg. 96371</small></span></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo3.png" alt="OFTEC" width="66" height="69"></span><span class="mq-copy"><b>OFTEC</b><small>Reg. C6630</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></svg></span><span class="mq-copy"><b>Est. 2001</b><small>25 years trading</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M16 4 26 8v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg></span><span class="mq-copy"><b>10 years</b><small>Boiler guarantee</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12.5 17h8M12.5 22h8"/></svg></span><span class="mq-copy"><b>Free quotes</b><small>No obligation</small></span></span></div><div class="mq-set" aria-hidden="true"><span class="mq-item mq-logo"><img src="img/acc-logo1.png" alt="" width="159" height="79"></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo2.png" alt="" width="69" height="72"></span><span class="mq-copy"><b>Gas Safe</b><small>Reg. 96371</small></span></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo3.png" alt="" width="66" height="69"></span><span class="mq-copy"><b>OFTEC</b><small>Reg. C6630</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></svg></span><span class="mq-copy"><b>Est. 2001</b><small>25 years trading</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M16 4 26 8v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg></span><span class="mq-copy"><b>10 years</b><small>Boiler guarantee</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12.5 17h8M12.5 22h8"/></svg></span><span class="mq-copy"><b>Free quotes</b><small>No obligation</small></span></span></div></div>
+  <div class="mq-track"><div class="mq-set"><span class="mq-item mq-logo"><img src="img/acc-logo1.png" alt="Worcester Bosch Group Accredited Installer" width="159" height="79"></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo2.png" alt="Gas Safe Register" width="69" height="72"></span><span class="mq-copy"><b>Gas Safe</b><small>Reg. 96371</small></span></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo3.png" alt="OFTEC" width="66" height="69"></span><span class="mq-copy"><b>OFTEC</b><small>Reg. C6630</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></svg></span><span class="mq-copy"><b>Est. 2001</b><small>25 years trading</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M16 4 26 8v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg></span><span class="mq-copy"><b>Up to 10 yrs</b><small>Boiler guarantee</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12.5 17h8M12.5 22h8"/></svg></span><span class="mq-copy"><b>Free quotes</b><small>No obligation</small></span></span></div><div class="mq-set" aria-hidden="true"><span class="mq-item mq-logo"><img src="img/acc-logo1.png" alt="" width="159" height="79"></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo2.png" alt="" width="69" height="72"></span><span class="mq-copy"><b>Gas Safe</b><small>Reg. 96371</small></span></span><span class="mq-item"><span class="mq-media"><img src="img/acc-logo3.png" alt="" width="66" height="69"></span><span class="mq-copy"><b>OFTEC</b><small>Reg. C6630</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></svg></span><span class="mq-copy"><b>Est. 2001</b><small>25 years trading</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M16 4 26 8v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg></span><span class="mq-copy"><b>Up to 10 yrs</b><small>Boiler guarantee</small></span></span><span class="mq-item"><span class="mq-media"><svg class="mq-ico" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12.5 17h8M12.5 22h8"/></svg></span><span class="mq-copy"><b>Free quotes</b><small>No obligation</small></span></span></div></div>
 </div></section>
 
 <section class="block" id="services"><div class="wrap">
@@ -890,8 +898,8 @@ body.covered header.site{position:static}
   <div class="q-intro">
     <span class="eyebrow">Instant boiler quote</span>
     <h2>A price for your new boiler <span class="serif">in 60 seconds.</span></h2>
-    <p class="lead">Five quick taps. We'll recommend the right boiler for your home and give you an indicative price, then fix it after a free survey.</p>
-    <ul class="q-points"><li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>No email needed to see a price</li><li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Worcester Accredited, up to 10 years' guarantee</li></ul>
+    <p class="lead">Five quick taps. We’ll recommend the right boiler for your home and give you an indicative price, then fix it after a free survey.</p>
+    <ul class="q-points"><li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>No email needed to see a price</li><li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#ED1B2E" stroke-width="2.4"/></svg>Worcester Accredited, up to 10 years’ guarantee</li></ul>
   </div>
   <div class="tool q-tool" id="qtool" aria-live="polite">
     <div class="q-top"><button type="button" class="q-back" id="qBack" hidden>&larr; Back</button><span class="q-count" id="qCount">1 of 5</span></div>
@@ -917,7 +925,7 @@ body.covered header.site{position:static}
   </div>
   <div>
     <span class="eyebrow">About Bishop &amp; Wheeler</span>
-    <h2>Started by two engineers. <span class="serif" style="color:var(--navy)">Built on getting it right.</span></h2>
+    <h2>Founded by two partners. <span class="serif" style="color:var(--navy)">Built on getting it right.</span></h2>
     <p>Adrian and Chris founded Bishop &amp; Wheeler in 2001 with one rule: no matter how small the job, get it right first time. Twenty-five years on, the team looks after homeowners and landlords right across South Devon.</p>
     <div class="team">
       <div><strong>2001</strong><small>founded in Ivybridge</small></div>
@@ -964,7 +972,7 @@ body.covered header.site{position:static}
   <div class="crumbs"><a href="#home">Home</a> / Heat pumps &amp; solar</div>
   <span class="eyebrow">Renewable energy</span>
   <h1>Heat your home from the air, the ground <span class="serif">and the sun.</span></h1>
-  <p>Renewable heating cuts running costs and your home's CO₂. As Worcester Accredited Installers we fit heat pumps and solar hot water to the same standard as our boilers.</p>
+  <p>Renewable heating cuts running costs and your home’s CO₂. As Worcester Accredited Installers we fit heat pumps and solar hot water to the same standard as our boilers.</p>
 </div>
 <div class="wrap" aria-hidden="true" style="padding-bottom:22px"><div class="pipes"><span class="flow"></span><span class="ret" style="background:#8EA3DA"></span></div></div>
 </section>
@@ -979,11 +987,11 @@ body.covered header.site{position:static}
       </div><p class="fit"><b>Best for:</b> oil and LPG homes, refurbishments, new builds and homes without mains gas.</p></div></div>
     </details><details class="acc">
       <summary><span><b>Ground source heat pumps</b><small>Steady warmth from 12°C underground.</small></span><em>4 kW <i>heat out per 1 kW in</i></em></summary>
-      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-engineer.webp" alt="Engineer commissioning a heating system" width="391" height="412"></div><div><p>A metre or two down, the ground holds an almost constant 12°C whatever the weather above. A glycol-based ground source system harnesses that heat to give a constant supply of hot water and heating. It's a well-established, long-term investment.</p><div class="specs">
+      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-engineer.webp" alt="Engineer commissioning a heating system" width="391" height="412"></div><div><p>A metre or two down, the ground holds an almost constant 12°C whatever the weather above. A glycol-based ground source system harnesses that heat to give a constant supply of hot water and heating. It’s a well-established, long-term investment.</p><div class="specs">
         <div><strong>4 kW</strong><small>heat out per 1 kW in</small></div>
         <div><strong>12°C</strong><small>ground temperature all year</small></div>
         <div><strong>300%+</strong><small>efficient</small></div>
-      </div><p class="fit"><b>Best for:</b> a well-established, long-term investment in heating your home.</p></div></div>
+      </div><p class="fit"><b>Best for:</b> steady heat whatever the weather, for years to come.</p></div></div>
     </details><details class="acc">
       <summary><span><b>Air to air heat pumps</b><small>Heat or cool an open space in about a day.</small></span><em>120 m² <i>heated or cooled per unit</i></em></summary>
       <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-engineer2.webp" alt="Engineer installing a wall-mounted unit" width="488" height="260"></div><div><p>Low maintenance and tidy on the wall, an air to air unit can heat or cool up to 120 m². It suits open-plan rooms, loft and basement conversions, extensions, classrooms and places of worship. The units also filter the air without drying it out, which helps allergy sufferers.</p><div class="specs">
@@ -993,7 +1001,7 @@ body.covered header.site{position:static}
       </div><p class="fit"><b>Best for:</b> extensions and conversions, and easing the load on an existing boiler.</p></div></div>
     </details><details class="acc">
       <summary><span><b>Solar hot water</b><small>Let the roof heat your water.</small></span><em>50–70% <i>of yearly hot water</i></em></summary>
-      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-solar.webp" alt="Roof-mounted solar panels being installed" width="380" height="386"></div><div><p>A well-sized solar thermal system should provide around 50–70% of a home's hot water, with the boiler topping up the rest. Worcester Greenskies panels pair with the Greenstar range of regular and system boilers, in gas or oil, for a highly efficient setup.</p><div class="specs">
+      <div class="acc-body tech-body"><div class="tech-img"><img src="img/ph-solar.webp" alt="Roof-mounted solar panels being installed" width="380" height="386"></div><div><p>A well-sized solar thermal system should provide around 50–70% of a home’s hot water, with the boiler topping up the rest. Worcester Greenskies panels pair with the Greenstar range of regular and system boilers, in gas or oil, for a highly efficient setup.</p><div class="specs">
         <div><strong>50–70%</strong><small>of yearly hot water</small></div>
         <div><strong>Gas or oil</strong><small>Greenstar boiler pairing</small></div>
         <div><strong>Cylinder</strong><small>separate hot water store</small></div>
@@ -1002,7 +1010,7 @@ body.covered header.site{position:static}
   <section class="block" style="padding-top:64px">
     <div class="sec-head">
       <div><span class="eyebrow">Side by side</span><h2>Which one suits your home?</h2></div>
-      <p>A quick comparison to start the conversation. We'll survey your home before recommending anything.</p>
+      <p>A quick comparison to start the conversation. We’ll survey your home before recommending anything.</p>
     </div>
     <div class="compare"><table>
       <thead><tr><th scope="col">System</th><th scope="col">Heat source</th><th scope="col">Output per 1 kW electricity</th><th scope="col">Replaces a boiler?</th><th scope="col">Best for</th></tr></thead>
@@ -1104,11 +1112,11 @@ body.covered header.site{position:static}
     <div class="box callbox"><small>Rather talk to someone?</small><strong>0776 776 7949</strong><small>Free, no-obligation estimates</small></div>
     <details class="acc acc-sm">
       <summary><span><b>Every visit comes with</b></span></summary>
-      <div class="acc-body"><ul><li>Gas Safe engineers who show their ID card</li><li>Free, no-obligation quotes</li><li>90-day labour guarantee on plumbing</li><li>Up to 10 years' guarantee on selected new Worcester boilers</li></ul></div>
+      <div class="acc-body"><ul><li>Gas Safe engineers who show their ID card</li><li>Free, no-obligation quotes</li><li>90-day labour guarantee on plumbing</li><li>Up to 10 years’ guarantee on selected new Worcester boilers</li></ul></div>
     </details>
     <details class="acc acc-sm">
       <summary><span><b>No heating or hot water?</b></span></summary>
-      <div class="acc-body"><p>Choose Repair and tell us what's happening, or call the office. If you smell gas, leave the property and call the National Gas Emergency line on <b style="user-select:all">0800 111 999</b>.</p></div>
+      <div class="acc-body"><p>Choose Repair and tell us what’s happening, or call the office. If you smell gas, leave the property and call the National Gas Emergency line on <b style="user-select:all">0800 111 999</b>.</p></div>
     </details>
   </aside>
 </div>
@@ -1358,7 +1366,6 @@ body.covered header.site{position:static}
   function showCover(){cover.hidden=false;document.body.classList.add('covered');startDots()}
   function hideCover(){cover.hidden=true;document.body.classList.remove('covered');stopDots()}
   document.getElementById('enterBtn').addEventListener('click',function(){hideCover();if(location.hash&&location.hash!=='#home'){location.hash='home'}else{show('home')}window.scrollTo(0,0)});
-  document.getElementById('bpLink').addEventListener('click',function(){hideCover()});
   tag.addEventListener('click',showCover);
   document.getElementById('cbOpen').addEventListener('click',showCover);
   var cv=document.getElementById('dots'),cx=cv.getContext('2d'),dots=[],W,H,mx=-999,my=-999,raf=null,t0=performance.now();
